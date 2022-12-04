@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="logo" href="#">
+        <img class="logo__image" src="#" width="86" height="35" alt="Мишка - логотип.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list cat-list">
+          <li class="cat-list__item">
+            <a class="cat_list__link" href="#">
+            Каталог товаров
+            </a>
+          </li>
+          <li class="cat-list__item">
+            <a class="cat_list__link" href="#">
+            Вязание на заказ
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="#">
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--cart" href="#">
+              Корзина пока пуста
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="knitting-container">
+      <h1 class="visually-hidden">Страница для заказа индивидуального изделия</h1>
+      <section class="knitting-header">
+        <h2 class="knitting-header__title">Вязание на заказ</h2>
+      </section>
+      <section class="knitting">
+        <p class="knitting__text">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="knitting__form forms" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="forms__fieldset">
+            <legend class="forms__legend">Тип</legend>
+            <ul class="forms__list radio">
+              <li class="radio__item">
+                <input class="radio__input" type="radio" value="interior accessory" checked>
+                <span class="radio__name">Аксессуар для интерьера</span>
+              </li>
+              <li class="radio__item">
+                <input class="radio__input" type="radio" value="children toy">
+                <span class="radio__name">Детская игрушка</span>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="forms__fieldset">
+            <legend class="forms_legend">Цвет</legend>
+            <ul class="forms__list checkbox">
+              <li class="checkbox__item">
+                <input class="checkbox__input" type="checkbox" name="product-color" value="white" checked>
+                <span class="checkbox__name">Белый</span>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input" type="checkbox" name="product-color" value="gray" checked>
+                <span class="checkbox__name">Серый</span>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input" type="checkbox" name="product-color" value="tiffany">
+                <span class="checkbox__name">Тиффани</span>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input" type="checkbox" name="product-color" value="black">
+                <span class="checkbox__name">Черный</span>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input" type="checkbox" name="product-color" value="rose">
+                <span class="checkbox__name">Розовый</span>
+              </li>
+              <li class="checkbox__item">
+                <input class="checkbox__input" type="checkbox" name="product-color" value="orange">
+                <span class="checkbox__name">Оранжевый</span>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="forms__fieldset">
+            <legend class="forms__legend">ФИО</legend>
+            <ul class="forms__list text">
+              <li class="text__item">
+                <span class="text__name">Имя:</span>
+                <input class="text__input" type="text" placeholder="Введите ваше имя*" name="client-name" required>
+              </li>
+              <li class="text__item">
+                <span class="text__name">Фамилия:</span>
+                <input class="text__input" type="text" placeholder="Укажите фамилию*" name="client-lastname" required>
+              </li>
+              <li class="text__item">
+                <span class="text__name">Отчество:</span>
+                <input class="text__input" type="text" placeholder="Отчество, если желаете" name="client-patronomic">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="forms__fieldset">
+            <legend class="forms__legend">ТЕЛ</legend>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link--vk" href="#">
+              <span class="visually-hidden">Мы вКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link--youtube" href="#">
+              <span class="visually-hidden">Наш Ютуб</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link--telegram" href="#">
+              <span class="visually-hidden">Наш Телеграм</span>
+            </a>
+          </li>
+        </ul
+        <div class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="#">
+            <img class="copyright__image" src="#" alt="Логотип HTML Academy.">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
