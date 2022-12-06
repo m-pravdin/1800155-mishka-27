@@ -39,84 +39,86 @@
         </ul>
       </nav>
     </header>
-    <main class="knitting-container">
-      <h1 class="visually-hidden">Страница для заказа индивидуального изделия</h1>
-      <section class="knitting-header">
-        <h2 class="knitting-header__title">Вязание на заказ</h2>
-      </section>
-      <section class="knitting">
-        <p class="knitting__text">
+    <main class="form-container">
+        <h1 class="form-container__title">Вязание на заказ</h2>
+      <section class="form-wrapper">
+        <p class="form-wrapper__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <form class="knitting__form forms" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="forms__fieldset">
-            <legend class="forms__legend">Тип</legend>
-            <ul class="forms__list radio">
-              <li class="radio__item">
-                <input class="radio__input" type="radio" value="interior accessory" checked>
-                <span class="radio__name">Аксессуар для интерьера</span>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Тип</legend>
+            <ul class="form__list">
+              <li class="radio">
+                <input class="radio__input" type="radio" id="accessory" name="type" value="interior accessory" checked>
+                <label class="radio__name" for="accessory">Аксессуар для интерьера</label>
               </li>
-              <li class="radio__item">
-                <input class="radio__input" type="radio" value="children toy">
-                <span class="radio__name">Детская игрушка</span>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="forms__fieldset">
-            <legend class="forms_legend">Цвет</legend>
-            <ul class="forms__list checkbox">
-              <li class="checkbox__item">
-                <input class="checkbox__input" type="checkbox" name="product-color" value="white" checked>
-                <span class="checkbox__name">Белый</span>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input" type="checkbox" name="product-color" value="gray" checked>
-                <span class="checkbox__name">Серый</span>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input" type="checkbox" name="product-color" value="tiffany">
-                <span class="checkbox__name">Тиффани</span>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input" type="checkbox" name="product-color" value="black">
-                <span class="checkbox__name">Черный</span>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input" type="checkbox" name="product-color" value="rose">
-                <span class="checkbox__name">Розовый</span>
-              </li>
-              <li class="checkbox__item">
-                <input class="checkbox__input" type="checkbox" name="product-color" value="orange">
-                <span class="checkbox__name">Оранжевый</span>
+              <li class="radio">
+                <input class="radio__input" type="radio" id="toy" name="type" value="children toy">
+                <label class="radio__name" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="forms__fieldset">
-            <legend class="forms__legend">ФИО</legend>
-            <ul class="forms__list text">
-              <li class="text__item">
-                <span class="text__name">Имя:</span>
-                <input class="text__input" type="text" placeholder="Введите ваше имя*" name="client-name" required>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Цвет</legend>
+            <ul class="form__list">
+              <li class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="white" name="color" value="white" checked>
+                <label class="checkbox__name" for="white">Белый</label>
               </li>
-              <li class="text__item">
-                <span class="text__name">Фамилия:</span>
-                <input class="text__input" type="text" placeholder="Укажите фамилию*" name="client-lastname" required>
+              <li class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="gray" name="color" value="gray" checked>
+                <label class="checkbox__name" for="gray">Серый</label>
               </li>
-              <li class="text__item">
-                <span class="text__name">Отчество:</span>
-                <input class="text__input" type="text" placeholder="Отчество, если желаете" name="client-patronomic">
+              <li class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="tiffany" name="color" value="tiffany">
+                <label class="checkbox__name" for="tiffany">Тиффани</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="black" name="color" value="black">
+                <label class="checkbox__name" for="black">Черный</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="rose" name="color" value="rose">
+                <label class="checkbox__name" for="rose">Розовый</label>
+              </li>
+              <li class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="orange" name="color" value="orange">
+                <label class="checkbox__name" for="orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="forms__fieldset">
-            <legend class="forms__legend">ТЕЛ</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ФИО</legend>
+            <ul class="form__list">
+              <li class="text">
+                <label class="text__name" for="name">Имя:</label>
+                <input class="text__input" type="text" placeholder="Введите ваше имя*" id="name" name="user" required>
+              </li>
+              <li class="text">
+                <label class="text__name" for="lastname">Фамилия:</label>
+                <input class="text__input" type="text" placeholder="Укажите фамилию*" id="lastname" name="user" required>
+              </li>
+              <li class="text">
+                <label class="text__name" for="patronymic">Отчество:</label>
+                <input class="text__input" type="text" placeholder="Отчество, если желаете" id="patronymic" name="user">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ТЕЛ</legend>
+            <input class="!" type="phone" id="phone">
+            <label class="!" for="phone"></label>
           </fieldset>
         </form>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <ul class="main-footer__social social">
+    <footer class="footer">
+      <a class="footer__logo logo" href="#">
+        <img class="logo__image" src="#" alt="Мишка - логотип в футере.">
+      </a>
+      <div class="footer__wrapper">
+        <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link--vk" href="#">
               <span class="visually-hidden">Мы вКонтакте</span>
@@ -133,7 +135,7 @@
             </a>
           </li>
         </ul
-        <div class="main-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="#">
             <img class="copyright__image" src="#" alt="Логотип HTML Academy.">
