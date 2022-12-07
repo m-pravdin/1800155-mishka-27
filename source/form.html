@@ -2,9 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
+
+    <!-- Header -->
     <header class="main-header">
       <a class="main-header__logo logo" href="#">
         <img class="logo__image" src="#" width="86" height="35" alt="Мишка - логотип.">
@@ -39,13 +42,21 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Form Main -->
     <main class="form-container">
-        <h1 class="form-container__title">Вязание на заказ</h2>
+      <h1 class="form-container__title">Вязание на заказ</h2>
+
+      <!-- Form Wrapper-->
       <section class="form-wrapper">
         <p class="form-wrapper__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
+
+        <!-- Form -->
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <!-- Type Inputs -->
           <fieldset class="form__fieldset">
             <legend class="form__legend">Тип</legend>
             <ul class="form__list">
@@ -59,6 +70,8 @@
               </li>
             </ul>
           </fieldset>
+
+          <!-- Color Inputs -->
           <fieldset class="form__fieldset">
             <legend class="form__legend">Цвет</legend>
             <ul class="form__list">
@@ -88,6 +101,8 @@
               </li>
             </ul>
           </fieldset>
+
+          <!-- Name Inputs -->
           <fieldset class="form__fieldset">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__list">
@@ -105,14 +120,34 @@
               </li>
             </ul>
           </fieldset>
+
+          <!-- Phone Input -->
           <fieldset class="form__fieldset">
             <legend class="form__legend">ТЕЛ</legend>
-            <input class="!" type="phone" id="phone">
-            <label class="!" for="phone"></label>
+            <input class="phone-input" type="phone" id="phone" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <label class="phone-label" for="phone"></label>
           </fieldset>
+
+          <!-- Email Input -->
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">E-mail</legend>
+            <input class="phone-input" type="email" id="email" name="user-email" placeholder="Ваш Email*">
+            <label class="phone-label" for="email"></label>
+          </fieldset>
+
+          <!-- Wishes Input -->
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Доп</legend>
+            <textarea class="textarea-input" id="wishes" name="user-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <label class="phone-label" for="wishes"></label>
+          </fieldset>
+          <p class="form__info">*Поля обязательны для заполнения</p>
+          <button class="form__button button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <a class="footer__logo logo" href="#">
         <img class="logo__image" src="#" alt="Мишка - логотип в футере.">
