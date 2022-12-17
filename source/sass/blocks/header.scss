@@ -1,0 +1,47 @@
+.main-header {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.main-nav {
+    position: relative;
+}
+
+.main-nav__toggle {
+    background-image: url(../../img/menu.svg);
+    background-size: 20px 14px;
+    background-repeat: no-repeat;
+}
+
+.main-nav__toggle:focus + .main-nav__list {
+    display: block;
+    background-color: #ffffff;
+}
+
+.main-nav__list {
+    position: absolute;
+    display: none;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.site-list__item {
+    padding: 29px 65px 27px 76px;
+}
+
+.user-list__item {
+    padding: 29px 65px 27px 76px;
+}
+
+.site-list__link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.user-list__link {
+    text-decoration: none;
+    color: #000000;
+}

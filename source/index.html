@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
@@ -10,7 +11,7 @@
     <!-- Header -->
     <header class="main-header">
       <a class="main-header__logo logo" href="#">
-        <img class="logo__image" src="#" width="86" height="35" alt="Мишка - логотип в шапке.">
+        <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -18,12 +19,12 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="catalog.html">
             Каталог товаров
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="form.html">
             Вязание на заказ
             </a>
           </li>
@@ -54,7 +55,7 @@
           <li class="promo__item">
             <a class="promo__link" href="#">Предметы интерьера</a>
           </li>
-          <li class="promo__item">
+          <li class="promo__item promo__item--second">
             <a class="promo__link" href="#">Детские игрушки</a>
           </li>
         </ul>
@@ -103,13 +104,13 @@
           <li class="advantages__item advantages__item--likes">
             Увеличивает лайки на фотографиях
           </li>
-          <li class="advantages_item advantages__item--knitting">
+          <li class="advantages__item advantages__item--knitting">
             Связано вручную с любовью и умилением
           </li>
-          <li class="advantages_item advantages__item--rocket">
+          <li class="advantages__item advantages__item--rocket">
             Поддержка отечественного производителя
           </li>
-          <li class="advantages_item advantages__item--gift">
+          <li class="advantages__item advantages__item--gift">
             Поставляется в подарочной упаковке
           </li>
         </ul>
@@ -194,5 +195,32 @@
         </div>
       </div>
     </footer>
+
+    <!-- Section Popup -->
+    <div class="popup-wrapper">
+      <div class="popup">
+        <p class="popup__title">Добавить в корзину</p>
+        <form class="popup__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="popup__fieldset">
+            <legend class="popup__description">Выберите размер:</legend>
+            <ul class="popup__list">
+              <li class="radio">
+                <input class="radio__input" type="radio" id="size-s" name="size" value="s" checked>
+                <label class="radio__label" for="size-s"></label>
+              </li>
+              <li class="radio">
+                <input class="radio__input" type="radio" id="size-m" name="size" value="m">
+                <label class="radio__label" for="size-m"></label>
+              </li>
+              <li class="radio">
+                <input class="radio__input" type="radio" id="size-l" name="size" value="l">
+                <label class="radio__label" for="size-l"></label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="popup__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
