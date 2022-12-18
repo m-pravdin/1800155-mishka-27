@@ -1,7 +1,20 @@
-@import "./blocks/fonts.scss";
-@import "./blocks/general.scss";
-@import "./blocks/header.scss";
+/* General Blocks */
+@import "./blocks/general/fonts.scss";
+@import "./blocks/general/general.scss";
+@import "./blocks/general/popup.scss";
+
+/* Blocks Header */
+@import "./blocks/header/header.scss";
+
+/* Blocks Footer */
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/copyright.scss";
+
+/* Index Block */
 @import "./blocks/promo.scss";
 @import "./blocks/main-product.scss";
 @import "./blocks/about.scss";
 @import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
+

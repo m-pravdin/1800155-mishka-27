@@ -1,0 +1,21 @@
+.footer {
+  background-color: #f1f1f1;
+  padding: 25px 30px 23px 30px;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__social::after {
+  content: "";
+  width: 260px;
+  border-bottom: 1px solid  #ececec;
+  padding-top: 28px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+}

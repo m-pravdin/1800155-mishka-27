@@ -1,0 +1,49 @@
+.page-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 38px;
+  padding-bottom: 39px;
+}
+
+.page-contacts__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  padding-left: 30px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.contact-info {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 62px;
+}
+
+.contact-info__item {
+  display: flex;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contact-info__name {
+  display: inline-block;
+  min-width: 76px;
+}
+
+.contact-info__email {
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 1px #62d1ba solid;
+  padding-bottom: 4px;
+}
+
+.page-contacts__map {
+  margin-bottom: 42px;
+}
+
+.page-contacts__button {
+  margin: auto 30px;
+  padding: 16px 38px;
+}
