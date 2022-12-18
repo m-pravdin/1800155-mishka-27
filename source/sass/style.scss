@@ -1,20 +1,25 @@
-/* General Blocks */
+/* General */
 @import "./blocks/general/fonts.scss";
 @import "./blocks/general/general.scss";
 @import "./blocks/general/popup.scss";
 
-/* Blocks Header */
+/* Header */
 @import "./blocks/header/header.scss";
 
-/* Blocks Footer */
+/* Footer */
 @import "./blocks/footer/footer.scss";
 @import "./blocks/footer/social.scss";
 @import "./blocks/footer/copyright.scss";
 
-/* Index Block */
+/* Index */
 @import "./blocks/promo.scss";
 @import "./blocks/main-product.scss";
 @import "./blocks/about.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/contacts.scss";
+
+/* Catalog */
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/product.scss";
+@import "./blocks/catalog/process.scss";
 
