@@ -11,10 +11,14 @@
   margin-bottom: 30px;
 }
 
-.product__img--wrapper {
+.product__img-wrapper {
   margin: 0;
   margin-bottom: 28px;
   background-color: #ececec;
+}
+
+.product__img {
+  display: block;
 }
 
 .product__title {

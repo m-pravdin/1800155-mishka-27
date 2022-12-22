@@ -10,37 +10,39 @@
 
     <!-- Header -->
     <header class="main-header">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="/">
         <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-            Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-            Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--search" href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--cart" href="#">
-              Корзина пока пуста
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+              Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+              Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--search" href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">
+                Корзина пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -107,17 +109,17 @@
           <fieldset class="form__fieldset form__fieldset--user">
             <legend class="form__legend form__legend--user">ФИО</legend>
             <ul class="form__list">
-              <li class="text">
-                <label class="text__label" for="name">Имя:</label>
-                <input class="text__input" type="text" placeholder="Введите ваше имя*" id="name" name="user" required>
+              <li class="field">
+                <label class="field__label" for="name">Имя:</label>
+                <input class="field__input" type="text" placeholder="Введите ваше имя*" id="name" name="user" required>
               </li>
-              <li class="text">
-                <label class="text__label" for="lastname">Фамилия:</label>
-                <input class="text__input" type="text" placeholder="Укажите фамилию*" id="lastname" name="user" required>
+              <li class="field">
+                <label class="field__label" for="lastname">Фамилия:</label>
+                <input class="field__input" type="text" placeholder="Укажите фамилию*" id="lastname" name="user" required>
               </li>
-              <li class="text">
-                <label class="text__label" for="patronymic">Отчество:</label>
-                <input class="text__input" type="text" placeholder="Отчество, если желаете" id="patronymic" name="user">
+              <li class="field">
+                <label class="field__label" for="patronymic">Отчество:</label>
+                <input class="field__input" type="text" placeholder="Отчество, если желаете" id="patronymic" name="user">
               </li>
             </ul>
           </fieldset>

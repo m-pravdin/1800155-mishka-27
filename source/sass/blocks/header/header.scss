@@ -11,9 +11,21 @@
 }
 
 .main-nav__toggle {
-    background-image: url(../../img/menu.svg);
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 37%;
+    right: 10%;
+    background-image: url(../img/header/menu.svg);
     background-size: 20px 14px;
     background-repeat: no-repeat;
+    border-style: none;
+    background-color: transparent;
+
+    &:focus {
+        background-image: url(../img/header/menu-close.svg);
+        background-size: 21px 20px;
+    }
 }
 
 .main-nav__toggle:focus + .main-nav__list-wrapper {

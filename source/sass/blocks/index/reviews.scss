@@ -19,10 +19,10 @@
 .review {
   list-style-type: none;
   padding: 0;
-}
 
-.review__item--hidden {
-  display: none;
+  &--hidden {
+    display: none;
+  }
 }
 
 .review__text {

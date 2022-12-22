@@ -1,7 +1,7 @@
 /* General */
 @import "./blocks/general/fonts.scss";
 @import "./blocks/general/general.scss";
-@import "./blocks/general/popup.scss";
+@import "./blocks/general/button.scss";
 
 /* Header */
 @import "./blocks/header/header.scss";
@@ -12,11 +12,12 @@
 @import "./blocks/footer/copyright.scss";
 
 /* Index */
-@import "./blocks/promo.scss";
-@import "./blocks/main-product.scss";
-@import "./blocks/about.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/contacts.scss";
+@import "./blocks/index/promo.scss";
+@import "./blocks/index/main-product.scss";
+@import "./blocks/index/about.scss";
+@import "./blocks/index/advantages.scss";
+@import "./blocks/index/reviews.scss";
+@import "./blocks/index/contacts.scss";
 
 /* Catalog */
 @import "./blocks/catalog/catalog.scss";
@@ -24,4 +25,7 @@
 @import "./blocks/catalog/process.scss";
 
 /* Form */
-@import "./blocks/form.scss";
+@import "./blocks/form/form.scss";
+
+/* Popup */
+@import "./blocks/popup/popup.scss";

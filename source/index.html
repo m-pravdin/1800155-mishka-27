@@ -10,7 +10,7 @@
 
     <!-- Header -->
     <header class="main-header">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="/">
         <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
       </a>
       <nav class="main-nav">
@@ -52,7 +52,9 @@
 
       <!-- Section Promo -->
       <section class="promo">
-        <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
+        <div class="promo__title-wrapper">
+          <h2 class="promo__title">Милые штуки ручной <br>работы для дома</h2>
+        </div>
         <ul class="promo__cat">
           <li class="promo__item">
             <a class="promo__link" href="#">Предметы интерьера</a>
@@ -207,7 +209,7 @@
     </footer>
 
     <!-- Section Popup -->
-    <div class="popup-wrapper popup-wrapper--active">
+    <div class="popup-wrapper">
       <div class="popup">
         <p class="popup__title">Добавить <br>в корзину</p>
         <form class="popup__form form" action="https://echo.htmlacademy.ru/" method="post">
@@ -228,7 +230,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="popup__button" type="submit">Добавить</button>
+          <button class="popup__button button" type="submit">Добавить</button>
         </form>
       </div>
     </div>
