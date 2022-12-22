@@ -45,39 +45,33 @@
   margin: 0;
 }
 
-.testimonial-buttons {
+.control {
   display: flex;
   justify-content: space-around;
-  width: 258px;
-  height: 52px;
+  min-height: 52px;
   background: #FFFFFF;
-  margin-bottom: 38px;
+  padding-top: 18px;
+  padding-bottom: 38px;
 }
 
-.testimonial-buttons__left {
+.control__button {
   min-width: 129px;
   border-style: solid;
   border-width: 1px 0.5px 1px 1px;
   border-color: #ececec;
   background-color: transparent;
-  background-image: url(../../img/review/huge-arrow-left.svg);
   background-repeat: no-repeat;
   background-size: 50px 26px;
   background-position: 50% 50%;
   margin: 0;
-}
 
-.testimonial-buttons__right {
-  min-width: 129px;
-  border-style: solid;
-  border-width: 1px 1px 1px 0.5px;
-  border-color: #ececec;
-  background-color: transparent;
-  background-image: url(../../img/review/huge-arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: 50px 26px;
-  background-position: 50% 50%;
-  margin: 0;
+  &--left {
+    background-image: url(../img/review/huge-arrow-left.svg);
+  }
+
+  &--right {
+    background-image: url(../img/review/huge-arrow-right.svg);
+  }
 }
 
 .reviews__button {
