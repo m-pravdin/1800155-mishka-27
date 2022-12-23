@@ -6,7 +6,7 @@
 .promo__title-wrapper {
   min-height: 283px;
   background-color: #fafafa;
-  background-image: url(../../img/promo/hero-mobile@2x1.jpeg);
+  background-image: url("../img/promo/hero-mobile@2x1.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,13 +32,13 @@
 }
 
 .promo__item {
-  background-color:#63d1bb;
+  background-color: #63d1bb;
   padding-left: 24px;
   padding-top: 30px;
   padding-bottom: 31px;
 
   &--second {
-    background-color:#56c3b2;
+    background-color: #56c3b2;
   }
 }
 

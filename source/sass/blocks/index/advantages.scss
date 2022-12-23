@@ -14,41 +14,41 @@
   padding-top: 54px;
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   &--flower {
-    background-image: url(../img/about/flower.svg);
+    background-image: url("../img/about/flower.svg");
     background-repeat: no-repeat;
     background-size: 32px 38px;
   }
 
   &--money {
-    background-image: url(../img/about/money.svg);
+    background-image: url("../img/about/money.svg");
     background-repeat: no-repeat;
     background-size: 47px 27px;
   }
 
   &--likes {
-    background-image: url(../img/about/likes.svg);
+    background-image: url("../img/about/likes.svg");
     background-repeat: no-repeat;
     background-size: 34px 27px;
   }
 
   &--knitting {
-    background-image: url(../img/about/knitting.svg);
+    background-image: url("../img/about/knitting.svg");
     background-repeat: no-repeat;
     background-size: 35px 34px;
   }
 
   &--rocket {
-    background-image: url(../img/about/rocket.svg);
+    background-image: url("../img/about/rocket.svg");
     background-repeat: no-repeat;
     background-size: 55px 23px;
   }
 
   &--gift {
-    background-image: url(../img/about/gift.svg);
+    background-image: url("../img/about/gift.svg");
     background-repeat: no-repeat;
     background-size: 33px 32px;
   }

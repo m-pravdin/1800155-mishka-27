@@ -20,6 +20,12 @@
   background-color: #ffffff;
 }
 
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
 .popup__fieldset {
   border-style: none;
 }
@@ -43,10 +49,15 @@
 .popup__list {
   display: flex;
   justify-content: center;
+  gap: 7px;
+  list-style-type: none;
   padding: 0;
 }
 
-.radio-popup {
-  width: 82px;
-  height: 52px;
+.popup__button {
+  margin: 0;
+  padding: 18px 82px;
+  background-color: #63d1bb;
+  color: #ffffff;
+  border-style: none;
 }

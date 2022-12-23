@@ -1,5 +1,5 @@
 .process {
-  margin: 0px 29px 58px 29px;
+  margin: 0 29px 58px 29px;
   display: flex;
   flex-direction: column;
   border: 1px solid #f1f1f1;
@@ -29,7 +29,7 @@
   align-items: center;
   width: 260px;
   height: 150px;
-  background-image: url(../../../img/process/video-mobile-1.jpg);
+  background-image: url("../img/process/video-mobile-1.jpg");
   background-repeat: no-repeat;
   margin-bottom: 35px;
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   min-height: 52px;
-  background: #FFFFFF;
+  background: #ffffff;
   padding-top: 18px;
   padding-bottom: 38px;
 }
@@ -19,10 +19,10 @@
   margin: 0;
 
   &--left {
-    background-image: url(../img/review/huge-arrow-left.svg);
+    background-image: url("../img/review/huge-arrow-left.svg");
   }
 
   &--right {
-    background-image: url(../img/review/huge-arrow-right.svg);
+    background-image: url("../img/review/huge-arrow-right.svg");
   }
 }
