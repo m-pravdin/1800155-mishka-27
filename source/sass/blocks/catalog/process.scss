@@ -1,0 +1,55 @@
+.process {
+  margin: 0 29px 58px 29px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f1f1;
+}
+
+.process__info {
+  display: flex;
+  align-items: center;
+  padding: 22px 13px 27px 34px;
+}
+
+.process__img {
+  margin-right: 25px;
+}
+
+.process__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.process__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/process/video-mobile-1.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+}
+
+.process__play-button {
+  display: none;
+  background-color: transparent;
+  border-style: none;
+}
+
+.process__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 34px;
+  margin-bottom: 41px;
+}
+
+.process__button {
+  align-self: center;
+  padding: 18px 20px;
+  margin-bottom: 33px;
+}

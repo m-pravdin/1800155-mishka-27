@@ -3,43 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
 
     <!-- Header -->
     <header class="main-header">
-      <a class="main-header__logo logo" href="#">
-        <img class="logo__image" src="#" width="86" height="35" alt="Мишка - логотип.">
+      <a class="main-header__logo logo" href="/">
+        <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-            Каталог товаров
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">
-            Вязание на заказ
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--search" href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link user-list__link--cart" href="#">
-              Корзина пока пуста
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+              Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+              Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--search" href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">
+                Корзина пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -52,7 +55,13 @@
         <ul class="catalog__list product">
           <li class="product__item">
             <a class="product__link">
-              <img class="product__img" src="#" alt="Фото товара - Зайчик-попрыгайчик.">
+              <p class="product__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpeg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpeg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
+                  <img class="product__img" src="./img/product/bunny-jumping-mobile-1.jpeg" alt="Фото товара - Зайчик-попрыгайчик.">
+                </picture>
+              </p>
               <p class="product__title">Зайчик-попрыгайчик</p>
               <p class="product__text">Рост 30 см, вес 200 г</p>
             </a>
@@ -65,7 +74,13 @@
           </li>
           <li class="product__item">
             <a class="product__link">
-              <img class="product__img" src="#" alt="Фото товара - Корзинка для белья.">
+              <p class="product__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpeg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpeg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
+                  <img class="product__img" src="./img/product/laundry-basket-mobile-1.jpg" width="260" height="195" alt="Фото товара - Корзинка для белья.">
+                </picture>
+              </p>
               <p class="product__title">Корзинка для белья</p>
               <p class="product__text">Диаметр 15 см, высота 10 см</p>
             </a>
@@ -78,7 +93,13 @@
           </li>
           <li class="product__item">
             <a class="product__link">
-              <img class="product__img" src="#" alt="Фото товара - Большая корзинка для игрушек.">
+              <p class="product__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpeg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpeg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
+                  <img class="product__img" src="./img/product/large-toy-basket-mobile-1.jpg" alt="Фото товара - Большая корзинка для игрушек.">
+                </picture>
+              </p>
               <p class="product__title">Большая корзинка для игрушек</p>
               <p class="product__text">Диаметр 30 см, высота 30 см</p>
             </a>
@@ -95,11 +116,11 @@
       <!-- Section Process -->
       <section class="process">
         <div class="process__info">
+          <img class="process__img" src="./img/process/video.svg" width="32" height="22" alt="Иконка заголовка процесса производства.">
           <h2 class="process__title">Процесс производства</h2>
-          <img class="process__img" src="#" alt="Иконка заголовка процесса производства.">
         </div>
         <div class="process__video">
-          <img class="process__play" src="#" alt="Иконка воспроизведения видео.">
+          <img class="process__play" src="./img/process/play.svg" width="102" height="77" alt="Иконка воспроизведения видео.">
           <button class="process__play-button button" type="button"></button>
         </div>
         <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -115,28 +136,55 @@
       <div class="footer__wrapper">
         <ul class="footer__social social">
           <li class="social__item">
-            <a class="social__link--vk" href="#">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Мы вКонтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link--youtube" href="#">
+            <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Наш Ютуб</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link--telegram" href="#">
+            <a class="social__link social__link--telegram" href="#">
               <span class="visually-hidden">Наш Телеграм</span>
             </a>
           </li>
-        </ul
+        </ul>
         <div class="footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="#">
-            <img class="copyright__image" src="#" alt="Логотип HTML Academy.">
+            <img class="copyright__image" src="./img/htmlacademy.svg" alt="Логотип HTML Academy.">
           </a>
         </div>
       </div>
     </footer>
+
+    <!-- Section Popup -->
+    <div class="popup-wrapper">
+      <div class="popup">
+        <p class="popup__title">Добавить в корзину</p>
+        <form class="popup__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="popup__fieldset">
+            <legend class="popup__description">Выберите размер:</legend>
+            <ul class="popup__list">
+              <li class="radio">
+                <input class="radio__input" type="radio" id="size-s" name="size" value="s" checked>
+                <label class="radio__label" for="size-s"></label>
+              </li>
+              <li class="radio">
+                <input class="radio__input" type="radio" id="size-m" name="size" value="m">
+                <label class="radio__label" for="size-m"></label>
+              </li>
+              <li class="radio">
+                <input class="radio__input" type="radio" id="size-l" name="size" value="l">
+                <label class="radio__label" for="size-l"></label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="popup__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

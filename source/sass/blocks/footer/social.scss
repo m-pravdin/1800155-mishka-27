@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: inline-flex;
+  width: 27px;
+  height: 20px;
+
+  &--vk {
+    background-image: url("../img/social/vk.svg");
+    background-repeat: no-repeat;
+    background-size: 27px 17px;
+  }
+
+  &--youtube {
+    background-image: url("../img/social/youtube.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 19px;
+  }
+
+  &--telegram {
+    background-image: url("../img/social/tg.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 17px;
+  }
+}
