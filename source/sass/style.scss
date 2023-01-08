@@ -1,7 +1,10 @@
 /* General */
-@import "./blocks/general/fonts.scss";
-@import "./blocks/general/general.scss";
-@import "./blocks/general/button.scss";
+@import "./general/variables.scss";
+@import "./blocks/layout.scss";
+@import "./general/fonts.scss";
+@import "./general/mixin.scss";
+@import "./general/general.scss";
+@import "./blocks/button.scss";
 
 /* Header */
 @import "./blocks/header/header.scss";
@@ -12,7 +15,7 @@
 @import "./blocks/footer/copyright.scss";
 
 /* Index */
-@import "./blocks/index/promo.scss";
+@import "./blocks/index/intro.scss";
 @import "./blocks/index/main-product.scss";
 @import "./blocks/index/about.scss";
 @import "./blocks/index/advantages.scss";

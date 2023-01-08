@@ -9,7 +9,7 @@
   <body class="page__body">
 
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header container">
       <a class="main-header__logo logo" href="/">
         <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
       </a>
@@ -43,24 +43,35 @@
             </li>
           </ul>
         </div>
+        <div class="main-nav__submenu submenu">
+          <ul class="submenu__list">
+            <li class="submenu__item">
+              Новые поступления
+            </li>
+            <li class="submenu__item">
+              Распродажа
+            </li>
+          </ul>
+          <p class="!">Бесплатная доставка по России</p>
+        </div>
       </nav>
     </header>
 
     <!-- Home Main -->
-    <main class="main-container">
+    <main class="main-container container">
       <h1 class="visually-hidden">Интернет-магазин «Мишка» - мягкие игрушки связанные с любовью!</h1>
 
-      <!-- Section Promo -->
-      <section class="promo">
-        <div class="promo__title-wrapper">
-          <h2 class="promo__title">Милые штуки ручной <br>работы для дома</h2>
+      <!-- Section Intro -->
+      <section class="intro">
+        <div class="intro__title-wrapper">
+          <h2 class="intro__title">Милые штуки ручной <br>работы для дома</h2>
         </div>
-        <ul class="promo__cat">
-          <li class="promo__item">
-            <a class="promo__link" href="#">Предметы интерьера</a>
+        <ul class="intro__category category-products">
+          <li class="category-products__item">
+            <a class="category-products__link" href="#">Предметы <br> интерьера</a>
           </li>
-          <li class="promo__item promo__item--second">
-            <a class="promo__link" href="#">Детские игрушки</a>
+          <li class="category-products__item category-products--second">
+            <a class="category-products__link" href="#">Детские <br> игрушки</a>
           </li>
         </ul>
       </section>
@@ -72,7 +83,7 @@
           <p class="main-product__notice">Товар недели</p>
         </div>
         <p class="main-product__description">
-          Экологически чистая пряжа,ручная работа. Доступны в шести расцветках и трёх размерах.
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
         </p>
         <dl class="main-product__option options">
           <div class="options__item">
@@ -89,33 +100,33 @@
           </div>
         </dl>
         <img class="main-product__image" src="./img/product/triple-set-mobile.jpeg" alt="Изображение товара «Вязаные корзинки»">
-        <b class="main-product__price">
+        <p class="main-product__price">
           Цена: 990 руб.
-        </b>
+        </p>
         <button class="main-product__button button" type="button">Заказать</button>
       </section>
 
       <!-- Section About -->
       <section class="about">
         <h2 class="about__title">Коротко о нас:</h2>
-        <ul class="about_advantages advantages">
+        <ul class="about__advantages advantages">
           <li class="advantages__item advantages__item--flower">
-            <p class="advantages__description">Экологически чистые материалы</p>
+            Экологически чистые материалы
           </li>
           <li class="advantages__item advantages__item--money">
-            <p class="advantages__description">Скандинавский стиль по российской цене</p>
+            Скандинавский стиль по российской цене
           </li>
           <li class="advantages__item advantages__item--likes">
-            <p class="advantages__description">Увеличивает лайки на фотографиях</p>
+            Увеличивает лайки на фотографиях
           </li>
           <li class="advantages__item advantages__item--knitting">
-            <p class="advantages__description">Связано вручную с любовью и умилением</p>
+            Связано вручную с любовью и умилением
           </li>
           <li class="advantages__item advantages__item--rocket">
-            <p class="advantages__description">Поддержка отечественного производителя</p>
+            Поддержка отечественного производителя
           </li>
           <li class="advantages__item advantages__item--gift">
-            <p class="advantages__description">Поставляется в подарочной упаковке</p>
+            Поставляется в подарочной упаковке
           </li>
         </ul>
       </section>
@@ -125,24 +136,28 @@
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list review">
           <li class="review__item">
-            <p class="review__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <div class="review__author bio">
-              <p class="bio__name">Анастасия Красильникова</p>
-              <p class="bio__inst">@misssssiskras</p>
-            </div>
+            <blockquote class="review__quote quote">
+              <p class="quote__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="quote__author">
+                <p class="quote__name">Анастасия Красильникова</p>
+                <p class="quote__contact">@misssssiskras</p>
+              </cite>
+            </blockquote>
           </li>
           <li class="review__item review__item--hidden">
-            <p class="review__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <div class="review__author bio">
-              <p class="bio__name">Анастасия Красильникова</p>
-              <p class="bio__inst">@misssssiskras</p>
-            </div>
+            <blockquote class="review__quote quote">
+              <p class="quote__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="quote__author">
+                <p class="quote__name">Анастасия Красильникова</p>
+                <p class="quote__contact">@misssssiskras</p>
+              </cite>
+            </blockquote>
           </li>
         </ul>
         <div class="reviews__control control">
@@ -153,13 +168,13 @@
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
-        <button class="reviews__button button" type="button">Написать</button>
+        <a class="reviews__button button" href="#">Написать</a>
       </section>
 
       <!-- Section Contacts -->
-      <section class="page-contacts">
-        <h2 class="page-contacts__title">Контакты</h2>
-        <div class="page-contacts__info contact-info">
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <address class="contacts__info contact-info">
           <div class="contact-info__item">
             <span class="contact-info__name">e-mail:</span>
             <a class="contact-info__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -168,16 +183,16 @@
             <span class="contact-info__name">адрес:</span>
             <span class="contact-info__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</a>
           </div>
-        </div>
-        <div class="page-contacts__map">
+        </address>
+        <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2999533596524!2d30.32209699295981!3d59.93878086896024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2str!4v1671319917703!5m2!1sru!2str" width="100%" height="455" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <button class="page-contacts__button button" type="button">Напишите нам</button>
+        <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__logo logo" href="#">
         <img class="logo__image" src="#" alt="Мишка - логотип в футере.">
       </a>
@@ -211,7 +226,7 @@
     <!-- Section Popup -->
     <div class="popup-wrapper">
       <div class="popup">
-        <p class="popup__title">Добавить <br>в корзину</p>
+        <h2 class="popup__title">Добавить в&nbsp;корзину</h2>
         <form class="popup__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="popup__fieldset">
             <legend class="popup__description">Выберите размер:</legend>
