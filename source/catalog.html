@@ -9,16 +9,16 @@
   <body class="page__body">
 
     <!-- Header -->
-    <header class="main-header">
-      <a class="main-header__logo logo" href="/">
-        <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
-      </a>
+    <header class="main-header container">
       <nav class="main-nav">
+        <a class="main-nav__logo logo" href="/">
+          <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__list-wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
               Каталог товаров
@@ -30,10 +30,10 @@
               </a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--search" href="#">
-                Поиск по сайту
+                <span class="search-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="user-list__item">
@@ -42,6 +42,17 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="main-nav__submenu submenu">
+          <ul class="submenu__list">
+            <li class="submenu__item">
+              Новые поступления
+            </li>
+            <li class="submenu__item">
+              Распродажа
+            </li>
+          </ul>
+          <p class="submenu__description">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
@@ -132,34 +143,32 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__logo logo" href="#">
-        <img class="logo__image" src="#" alt="Мишка - логотип в футере.">
+        <img class="logo__image" src="./img/logo-footer.svg" alt="Мишка - логотип в футере.">
       </a>
-      <div class="footer__wrapper">
-        <ul class="footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">Мы вКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">Наш Ютуб</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <span class="visually-hidden">Наш Телеграм</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="#">
-            <img class="copyright__image" src="./img/htmlacademy.svg" alt="Логотип HTML Academy.">
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Мы вКонтакте</span>
           </a>
-        </div>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Наш Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">Наш Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img class="copyright__image" src="./img/htmlacademy.svg" alt="Логотип HTML Academy.">
+        </a>
       </div>
     </footer>
 
