@@ -1,0 +1,36 @@
+.contact-info {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 62px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.contact-info__item {
+  display: flex;
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.contact-info__name {
+  display: inline-block;
+  min-width: 76px;
+}
+
+.contact-info__email {
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 1px #62d1ba solid;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
