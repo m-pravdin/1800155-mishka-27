@@ -2,9 +2,13 @@
   display: flex;
   justify-content: space-around;
   min-height: 52px;
-  background: #ffffff;
+  background: transparent;
   padding-top: 18px;
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
 }
 
 .control__button {

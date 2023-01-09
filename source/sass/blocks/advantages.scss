@@ -3,15 +3,25 @@
   flex-direction: column;
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    max-height: 409px;
+    padding-top: 34px;
+  }
 }
 
 .advantages__item {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: $dark-color;
   margin-bottom: 30px;
   padding-top: 54px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
   &:last-child {
     margin-bottom: 0;

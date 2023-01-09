@@ -1,0 +1,30 @@
+.quote__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    order: 2;
+  }
+}
+
+.quote__author {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.quote__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.quote__contact {
+  margin: 0;
+}

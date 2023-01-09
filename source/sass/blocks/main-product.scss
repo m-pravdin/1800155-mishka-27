@@ -1,0 +1,127 @@
+.main-product {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  padding: 33px 30px 36px 30px;
+  background-image: url("../img/zigzag-line-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 50px 50px 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 50px 50px 82px;
+  }
+}
+
+.main-product__title-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.main-product__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 116%;
+    margin-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.main-product__notice {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $accent-color;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100px;
+    text-align: center;
+    margin-right: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 47px;
+  }
+}
+
+.main-product__description {
+  @media (min-width: $desktop-width) {
+    max-width: 292px;
+    margin-left: 155px;
+  }
+}
+
+.options__item {
+  display: flex;
+  line-height: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 155px;
+  }
+}
+
+.options__item::after {
+  content: "";
+  width: 260px;
+  border-bottom: 1px solid  $darken-gray-color;
+}
+
+.options__attr {
+  width: 97px;
+}
+
+.options__value {
+  width: 162px;
+}
+
+.main-product__image {
+  background-color: $light-gray-color;
+  margin-bottom: 26px;
+}
+
+.main-product__price {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 245px;
+    margin-bottom: 33px;
+  }
+}
+
+.main-product__button {
+  @media (min-width: $desktop-width) {
+    max-width: 292px;
+    padding: 16px 86px;
+    margin-left: 155px;
+  }
+}

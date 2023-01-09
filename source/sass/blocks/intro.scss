@@ -1,6 +1,11 @@
 .intro {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .intro__title-wrapper {
@@ -12,6 +17,11 @@
   background-repeat: no-repeat;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    height: 746px;
+    background-image: url("../img/intro/hero-desktop 2.jpg");
+  }
 }
 
 .intro__title {
@@ -23,6 +33,12 @@
   text-align: center;
   margin: 0;
   margin-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 116%;
+    margin-top: 155px;
+  }
 }
 
 .intro__category {
@@ -44,6 +60,11 @@
   &--second {
     background-color: #56c3b2;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-left: 36px;
+  }
 }
 
 .category-products__link {
@@ -54,8 +75,4 @@
   line-height: 24px;
   color: #ffffff;
   text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    width: 334px;
-  }
 }

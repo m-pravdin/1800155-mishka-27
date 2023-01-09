@@ -1,0 +1,26 @@
+.about {
+  padding: 33px 30px 58px 30px;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 50px 82px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 50px 90px 225px;
+  }
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 116%;
+  }
+}
