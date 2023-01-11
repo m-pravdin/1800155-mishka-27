@@ -77,10 +77,13 @@
 }
 
 .main-nav__logo {
+  display: block;
+
   @media (min-width: $tablet-width) {
     order: 1;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid $light-gray-color;
   }
 
   @media (min-width: $desktop-width) {

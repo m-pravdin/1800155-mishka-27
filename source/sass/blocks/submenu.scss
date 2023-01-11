@@ -4,6 +4,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    background-color: $background-gray-color;
+    padding: 20px 0;
+
+    &--inner-page {
+      background-color: #f1f1f1;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -1,11 +1,6 @@
 .intro {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 .intro__title-wrapper {
@@ -19,8 +14,9 @@
   padding-right: 30px;
 
   @media (min-width: $tablet-width) {
-    height: 746px;
+    height: 627px;
     background-image: url("../img/intro/hero-desktop 2.jpg");
+    background-position: 0 2px;
   }
 }
 
@@ -48,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -62,7 +59,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 334px;
     padding-left: 36px;
   }
 }

@@ -9,7 +9,7 @@
   <body class="page__body">
 
     <!-- Header -->
-    <header class="main-header container">
+    <header class="main-header main-header--inner-page container">
       <nav class="main-nav">
         <a class="main-nav__logo logo" href="/">
           <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
@@ -18,7 +18,7 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__list-wrapper">
-          <ul class="main-nav__site-list site-list">
+          <ul class="main-nav__site-list site-list site-list--inner-page">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
               Каталог товаров
@@ -43,7 +43,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-nav__submenu submenu">
+        <div class="main-nav__submenu submenu submenu--inner-page">
           <ul class="submenu__list">
             <li class="submenu__item">
               Новые поступления
@@ -67,16 +67,14 @@
         <ul class="catalog__list product">
           <li class="product__item">
             <a class="product__link">
-              <p class="product__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
-                  <img class="product__img" src="./img/product/bunny-jumping-mobile-1.jpeg" alt="Фото товара - Зайчик-попрыгайчик.">
-                </picture>
-              </p>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
+                <img class="product__img" src="./img/product/bunny-jumping-mobile-1.jpg" alt="Фото товара - Зайчик-попрыгайчик.">
+              </picture>
             </a>
             <div class="product__info">
-              <p class="product__title">Зайчик-попрыгайчик</p>
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
               <p class="product__text">Рост 30 см, вес 200 г</p>
               <p class="product__price">
                 <span class="product__cost">1 200 руб.</span>
@@ -88,16 +86,14 @@
           </li>
           <li class="product__item">
             <a class="product__link">
-              <p class="product__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/product/laundry-basket-desktop-1.jpg 1x, ./img/product/laundry-basket-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/product/laundry-basket-tablet-1.jpg 1x, ./img/product/laundry-basket-tablet-1@2x.jpg 2x">
-                  <img class="product__img" src="./img/product/laundry-basket-mobile-1.jpg" alt="Фото товара - Корзинка для белья.">
-                </picture>
-              </p>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/product/laundry-basket-desktop-1.jpg 1x, ./img/product/laundry-basket-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/product/laundry-basket-tablet-1.jpg 1x, ./img/product/laundry-basket-tablet-1@2x.jpg 2x">
+                <img class="product__img" src="./img/product/laundry-basket-mobile-1.jpg" alt="Фото товара - Корзинка для белья.">
+              </picture>
             </a>
             <div class="product__info">
-              <p class="product__title">Корзинка для белья</p>
+              <h3 class="product__title">Корзинка для белья</h3>
               <p class="product__text">Диаметр 15 см, высота 10 см</p>
               <p class="product__price">
                 <span class="product__cost">690 руб.</span>
@@ -109,16 +105,14 @@
           </li>
           <li class="product__item">
             <a class="product__link">
-              <p class="product__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/product/large-toy-basket-desktop-1.jpeg 1x, ./img/product/large-toy-basket-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/product/large-toy-basket-tablet-1.jpg 1x, ./img/product/large-toy-basket-tablet-1@2x.jpg 2x">
-                  <img class="product__img" src="./img/product/large-toy-basket-mobile-1.jpg" alt="Фото товара - Большая корзинка для игрушек.">
-                </picture>
-              </p>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/product/large-toy-basket-desktop-1.jpeg 1x, ./img/product/large-toy-basket-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/product/large-toy-basket-tablet-1.jpg 1x, ./img/product/large-toy-basket-tablet-1@2x.jpg 2x">
+                <img class="product__img" src="./img/product/large-toy-basket-mobile-1.jpg" alt="Фото товара - Большая корзинка для игрушек.">
+              </picture>
             </a>
             <div class="product__info">
-              <p class="product__title">Большая корзинка <br> для игрушек</p>
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
               <p class="product__text">Диаметр 30 см, высота 30 см</p>
               <p class="product__price">
                 <span class="product__cost">1 500 руб.</span>
@@ -134,8 +128,9 @@
       <!-- Section Process -->
       <section class="process">
         <div class="process__info">
-          <!-- img class="process__img" src="./img/process/video.svg" width="32" height="22" alt="Иконка заголовка процесса производства."> -->
           <h2 class="process__title">Процесс производства</h2>
+          <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="process__button button">Сделать заказ</button>
         </div>
         <div class="process__video">
           <img class="process__play" src="./img/process/play.svg" width="102" height="77" alt="Иконка воспроизведения видео.">
@@ -143,8 +138,6 @@
             <span class="visually-hidden">Воспроизвести.</span>
           </button>
         </div>
-        <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="process__button button">Сделать заказ</button>
       </section>
     </main>
 

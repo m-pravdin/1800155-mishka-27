@@ -1,3 +1,9 @@
+.catalog-container {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 105px;
+  }
+}
+
 .catalog-container__title {
   font-weight: 700;
   font-size: 27px;
