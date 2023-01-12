@@ -15,8 +15,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: calc(100% - 64px);
-      height: 64px;
+      top: calc(100% - 65px);
+      height: 65px;
       width: 100%;
       z-index: -1;
       background-color: $background-gray-color;
