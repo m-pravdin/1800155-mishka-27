@@ -1,0 +1,24 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 133%;
+}
+
+.options__item {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  border-bottom: 1px solid $darken-gray-color;
+}
+
+.options__attr {
+  width: 98px;
+  padding: 10px 10px 10px 0;
+}
+
+.options__value {
+  width: 162px;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}

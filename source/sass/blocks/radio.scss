@@ -1,0 +1,31 @@
+.radio {
+  display: flex;
+}
+
+.radio__input {
+  margin-right: 19px;
+  margin-bottom: 11px;
+}
+
+.radio__mark {
+  width: 42px;
+  height: 42px;
+  background: url("../../img/radio.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.radio__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 106%;
+  color: $dark-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 95%;
+  }
+}

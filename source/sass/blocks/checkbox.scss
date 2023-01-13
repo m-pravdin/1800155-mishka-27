@@ -1,0 +1,26 @@
+.checkbox {
+  display: flex;
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      min-width: 200px;
+    }
+  }
+}
+
+.checkbox__input {
+  margin-right: 19px;
+  margin-bottom: 23px;
+}
+
+.checkbox__label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 106%;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 95%;
+  }
+}

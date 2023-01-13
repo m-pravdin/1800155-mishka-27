@@ -32,12 +32,12 @@
   margin: auto 30px;
   padding: 16px 38px;
   color: $dark-color;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 17px;
     line-height: 116%;
-    max-width: 230px;
     align-self: center;
   }
 }
