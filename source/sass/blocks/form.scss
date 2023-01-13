@@ -113,10 +113,7 @@
 
 .form__fieldset-inputs {
   display: flex;
-
-  &--type {
-    flex-direction: column;
-  }
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 50px 50px;
