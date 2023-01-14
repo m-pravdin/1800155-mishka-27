@@ -38,6 +38,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .radio__input:not(:disabled):not(:checked) + .radio__label:hover::before {
@@ -57,13 +62,23 @@
   position: absolute;
   content: "";
   left: 40px;
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   background-color: $accent-color;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 237px;
+    width: 23px;
+    height: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 300px;
+  }
 }
 
 .radio__input:checked + .radio__label:hover::after {

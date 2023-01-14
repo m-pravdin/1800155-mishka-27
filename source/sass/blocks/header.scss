@@ -21,12 +21,20 @@
       z-index: -1;
       background-color: $background-gray-color;
       border-top: 1px solid $light-gray-color;
+
+      @media (min-width: $tablet-width) {
+        background-color: $dark-color;
+      }
     }
   }
 
-  &--inner-page {
+  &--inner {
     @media (min-width: $tablet-width) {
-      background-color: $light-gray-color;
+      background-color: $white-color;
     }
   }
+}
+
+.main-header--inner + .site-list {
+  background-color: $white-color;
 }

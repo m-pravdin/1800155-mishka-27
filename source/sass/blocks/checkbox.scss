@@ -43,6 +43,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .checkbox__input:not(:disabled):not(:checked) + .checkbox__label:hover::before {
