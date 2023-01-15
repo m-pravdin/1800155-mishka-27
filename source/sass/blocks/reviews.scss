@@ -1,0 +1,16 @@
+.reviews {
+  padding: 30px 30px 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 50px 85px;
+    min-height: 543px;
+    background-image: url("../../img/review/review-tablet-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 50px 85px 174px;
+  }
+}
+

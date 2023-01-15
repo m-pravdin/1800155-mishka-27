@@ -9,16 +9,16 @@
   <body class="page__body">
 
     <!-- Header -->
-    <header class="main-header">
-      <a class="main-header__logo logo" href="/">
-        <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
-      </a>
+    <header class="main-header main-header--inner container">
       <nav class="main-nav">
+        <a class="main-nav__logo logo" href="/">
+          <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__list-wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
               Каталог товаров
@@ -30,10 +30,10 @@
               </a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--search" href="#">
-                Поиск по сайту
+                <span class="search-text">Поиск по сайту</span>
               </a>
             </li>
             <li class="user-list__item">
@@ -42,6 +42,17 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="main-nav__submenu submenu submenu--inner-page">
+          <ul class="submenu__list">
+            <li class="submenu__item">
+              Новые поступления
+            </li>
+            <li class="submenu__item">
+              Распродажа
+            </li>
+          </ul>
+          <p class="submenu__description">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
@@ -52,62 +63,63 @@
 
       <!-- Section Catalog -->
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог вещей ручной работы</h2>
         <ul class="catalog__list product">
           <li class="product__item">
             <a class="product__link">
-              <p class="product__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpeg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpeg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
-                  <img class="product__img" src="./img/product/bunny-jumping-mobile-1.jpeg" alt="Фото товара - Зайчик-попрыгайчик.">
-                </picture>
-              </p>
-              <p class="product__title">Зайчик-попрыгайчик</p>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
+                <img class="product__img" src="./img/product/bunny-jumping-mobile-1.jpg" alt="Фото товара - Зайчик-попрыгайчик.">
+              </picture>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
               <p class="product__text">Рост 30 см, вес 200 г</p>
-            </a>
-            <div class="product__info">
-              <b class="product__price">1 200 руб.</b>
-              <button class="product__button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <p class="product__price">
+                <span class="product__cost">1 200 руб.</span>
+                <button class="product__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </p>
             </div>
           </li>
           <li class="product__item">
             <a class="product__link">
-              <p class="product__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpeg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpeg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
-                  <img class="product__img" src="./img/product/laundry-basket-mobile-1.jpg" width="260" height="195" alt="Фото товара - Корзинка для белья.">
-                </picture>
-              </p>
-              <p class="product__title">Корзинка для белья</p>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/product/laundry-basket-desktop-1.jpg 1x, ./img/product/laundry-basket-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/product/laundry-basket-tablet-1.jpg 1x, ./img/product/laundry-basket-tablet-1@2x.jpg 2x">
+                <img class="product__img" src="./img/product/laundry-basket-mobile-1.jpg" alt="Фото товара - Корзинка для белья.">
+              </picture>
+            </a>
+            <div class="product__info">
+              <h3 class="product__title">Корзинка для белья</h3>
               <p class="product__text">Диаметр 15 см, высота 10 см</p>
-            </a>
-            <div class="product__info">
-              <b class="product__price">690 руб.</b>
-              <button class="product__button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <p class="product__price">
+                <span class="product__cost">690 руб.</span>
+                <button class="product__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </p>
             </div>
           </li>
           <li class="product__item">
             <a class="product__link">
-              <p class="product__img-wrapper">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/product/bunny-jumping-desktop-1.jpeg 1x, ./img/product/bunny-jumping-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./img/product/bunny-jumping-tablet-1.jpeg 1x, ./img/product/bunny-jumping-tablet-1@2x.jpg 2x">
-                  <img class="product__img" src="./img/product/large-toy-basket-mobile-1.jpg" alt="Фото товара - Большая корзинка для игрушек.">
-                </picture>
-              </p>
-              <p class="product__title">Большая корзинка для игрушек</p>
-              <p class="product__text">Диаметр 30 см, высота 30 см</p>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/product/large-toy-basket-desktop-1.jpeg 1x, ./img/product/large-toy-basket-desktop-1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/product/large-toy-basket-tablet-1.jpg 1x, ./img/product/large-toy-basket-tablet-1@2x.jpg 2x">
+                <img class="product__img" src="./img/product/large-toy-basket-mobile-1.jpg" alt="Фото товара - Большая корзинка для игрушек.">
+              </picture>
             </a>
             <div class="product__info">
-              <b class="product__price">1 500 руб.</b>
-              <button class="product__button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
+              <p class="product__text">Диаметр 30 см, высота 30 см</p>
+              <p class="product__price">
+                <span class="product__cost">1 500 руб.</span>
+                <button class="product__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </p>
             </div>
           </li>
         </ul>
@@ -116,47 +128,46 @@
       <!-- Section Process -->
       <section class="process">
         <div class="process__info">
-          <img class="process__img" src="./img/process/video.svg" width="32" height="22" alt="Иконка заголовка процесса производства.">
           <h2 class="process__title">Процесс производства</h2>
+          <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="process__button button">Сделать заказ</button>
         </div>
         <div class="process__video">
           <img class="process__play" src="./img/process/play.svg" width="102" height="77" alt="Иконка воспроизведения видео.">
-          <button class="process__play-button button" type="button"></button>
+          <button class="process__play-button button" type="button">
+            <span class="visually-hidden">Воспроизвести.</span>
+          </button>
         </div>
-        <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="process__button button">Сделать заказ</button>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__logo logo" href="#">
-        <img class="logo__image" src="#" alt="Мишка - логотип в футере.">
+        <img class="logo__image" src="./img/logo-footer.svg" alt="Мишка - логотип в футере.">
       </a>
-      <div class="footer__wrapper">
-        <ul class="footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
-              <span class="visually-hidden">Мы вКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">Наш Ютуб</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <span class="visually-hidden">Наш Телеграм</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="#">
-            <img class="copyright__image" src="./img/htmlacademy.svg" alt="Логотип HTML Academy.">
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Мы вКонтакте</span>
           </a>
-        </div>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Наш Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">Наш Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img class="copyright__image" src="./img/htmlacademy.svg" alt="Логотип HTML Academy.">
+        </a>
       </div>
     </footer>
 

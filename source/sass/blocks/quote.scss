@@ -1,0 +1,35 @@
+.quote {
+  margin: 0;
+}
+
+.quote__text {
+  max-width: 310px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 662px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 875px;
+    font-size: 17px;
+    line-height: 176%;
+  }
+}
+
+.quote__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141%;
+  color: $dark-color;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.quote__contact {
+  margin: 0;
+}

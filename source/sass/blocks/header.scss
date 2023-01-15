@@ -1,0 +1,40 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: transparent;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $light-gray-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    border: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% - 65px);
+      height: 65px;
+      width: 100%;
+      z-index: -1;
+      background-color: $background-gray-color;
+      border-top: 1px solid $light-gray-color;
+    }
+  }
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      &::after {
+        background-color: $light-gray-color;
+      }
+    }
+  }
+}
+
+.main-header--inner .submenu {
+  @media (min-width: $tablet-width) {
+    background-color: $light-gray-color;
+  }
+}

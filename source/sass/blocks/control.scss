@@ -1,0 +1,37 @@
+.control {
+  display: flex;
+  justify-content: space-around;
+  min-height: 52px;
+  background: transparent;
+  padding-top: 18px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.control__button {
+  height: 52px;
+  min-width: 50%;
+  border-style: solid;
+  border-width: 1px 0.5px 1px 1px;
+  border-color: $darken-gray-color;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: 50% 50%;
+  margin: 0;
+
+  &--left {
+    background-image: url("../img/review/huge-arrow-left.svg");
+  }
+
+  &--right {
+    background-image: url("../img/review/huge-arrow-right.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
