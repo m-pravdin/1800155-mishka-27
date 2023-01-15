@@ -11,14 +11,18 @@
 }
 
 .radio__label {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 106%;
   color: $dark-color;
+  min-height: 42px;
+  padding-left: 61px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 95%;
+    padding-left: 78px;
   }
 }
 
@@ -29,7 +33,9 @@
 }
 
 .radio__input + .radio__label::before {
+  position: absolute;
   content: "";
+  left: 0;
   width: 42px;
   height: 42px;
   border: 2px solid $gray-color;
@@ -61,7 +67,7 @@
   border-color: $gray-color;
   position: absolute;
   content: "";
-  left: 40px;
+  left: 12px;
   width: 18px;
   height: 18px;
   background-color: $accent-color;
@@ -71,13 +77,9 @@
   background-size: 50% 50%;
 
   @media (min-width: $tablet-width) {
-    left: 237px;
+    left: 15px;
     width: 23px;
     height: 23px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 300px;
   }
 }
 

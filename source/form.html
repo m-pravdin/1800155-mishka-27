@@ -71,7 +71,7 @@
         <form class="form" action="https://echo.htmlacademy.ru/" method="get">
 
           <!-- Type Inputs -->
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--type">
             <div class="form__fieldset-inputs form__fieldset-inputs--type">
               <legend class="form__legend form__legend--type">Тип</legend>
               <ul class="form__list form__list--type">
@@ -89,7 +89,7 @@
 
           <!-- Color Inputs -->
           <fieldset class="form__fieldset form__fieldset--color">
-            <div class="form__fieldset-inputs">
+            <div class="form__fieldset-inputs form__fieldset-inputs--color">
               <legend class="form__legend form__legend--color">Цвет</legend>
               <ul class="form__list form__list--color">
                 <li class="checkbox checkbox--color">
@@ -122,20 +122,20 @@
 
           <!-- Name Inputs -->
           <fieldset class="form__fieldset form__fieldset--user">
-            <div class="form__fieldset-inputs">
+            <div class="form__fieldset-inputs form__fieldset-inputs--user">
               <legend class="form__legend form__legend--user">ФИО</legend>
               <ul class="form__list form__list--user">
                 <li class="field">
                   <label class="field__label" for="name">Имя:</label>
-                  <input class="field__input" type="text" placeholder="Введите ваше имя*" id="name" name="user" required>
+                  <input class="field__input text-input" type="text" placeholder="Введите ваше имя*" id="name" name="user" required>
                 </li>
                 <li class="field">
                   <label class="field__label" for="lastname">Фамилия:</label>
-                  <input class="field__input" type="text" placeholder="Укажите фамилию*" id="lastname" name="user" required>
+                  <input class="field__input text-input" type="text" placeholder="Укажите фамилию*" id="lastname" name="user" required>
                 </li>
                 <li class="field">
                   <label class="field__label" for="patronymic">Отчество:</label>
-                  <input class="field__input" type="text" placeholder="Отчество, если желаете" id="patronymic" name="user">
+                  <input class="field__input text-input" type="text" placeholder="Отчество, если желаете" id="patronymic" name="user">
                 </li>
               </ul>
             </div>
@@ -145,7 +145,7 @@
           <fieldset class="form__fieldset form__fieldset--phone">
             <div class="form__fieldset-inputs form__fieldset-inputs--phone">
               <legend class="form__legend">ТЕЛ</legend>
-              <input class="phone-input" type="phone" id="phone" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <input class="text-input text-input--phone" type="phone" id="phone" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <label class="phone-label" for="phone"></label>
             </div>
           </fieldset>
@@ -154,14 +154,14 @@
           <fieldset class="form__fieldset form__fieldset--email">
             <div class="form__fieldset-inputs form__fieldset-inputs--email">
               <legend class="form__legend">E-mail</legend>
-              <input class="email-input" type="email" id="email" name="user-email" placeholder="Ваш Email*" required>
+              <input class="text-input text-input--email" type="email" id="email" name="user-email" placeholder="Ваш Email*" required>
               <label class="email-label" for="email"></label>
             </div>
           </fieldset>
 
           <!-- Wishes Input -->
           <fieldset class="form__fieldset form__fieldset--wishes">
-            <div class="form__fieldset-inputs">
+            <div class="form__fieldset-inputs form__fieldset-inputs--wishes">
               <legend class="form__legend form__legend--wishes">Доп</legend>
               <label class="textarea-label visually-hidden" for="wishes">Пожелания к заказу</label>
               <textarea class="textarea-input" id="wishes" name="user-wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>

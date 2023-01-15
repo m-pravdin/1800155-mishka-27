@@ -126,6 +126,10 @@
       flex-direction: row;
     }
 
+    &--user {
+      flex-direction: row;
+    }
+
     &--phone {
       padding: 50px 50px 12px 50px;
       align-items: center;
@@ -135,6 +139,10 @@
     &--email {
       padding: 12px 50px 50px 50px;
       align-items: center;
+      flex-direction: row;
+    }
+
+    &--wishes {
       flex-direction: row;
     }
 
@@ -158,6 +166,7 @@
   line-height: 94%;
   text-transform: uppercase;
   color: $accent-color;
+  min-width: 65px;
 
   &--type {
     margin-bottom: 30px;
@@ -190,7 +199,8 @@
 
   &--type {
     @media (min-width: $tablet-width) {
-      margin-left: 132px;
+      margin-left: 120px;
+      gap: 32px;
     }
 
     @media (min-width: $desktop-width) {
@@ -202,8 +212,9 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       flex-wrap: wrap;
-      margin-left: 172px;
+      margin-left: 120px;
       max-width: 465px;
+      gap: 32px;
     }
 
     @media (min-width: $desktop-width) {
@@ -213,16 +224,17 @@
 
   &--user {
     @media (min-width: $tablet-width) {
-      margin-left: 172px;
+      margin-left: 120px;
       gap: 36px;
     }
   }
 }
 
-.phone-input {
+.text-input {
   width: 100%;
   margin: 0;
   padding: 0;
+  line-height: 106%;
   padding-top: 19px;
   padding-bottom: 20px;
   border-style: none;
@@ -231,57 +243,38 @@
   &::placeholder {
     font-weight: 400;
     font-size: 17px;
-    line-height: 106%;
+    color: $placeholder-color;
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
-      line-height: 95%;
       padding-left: 10px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    background-color: $light-gray-color;
-    margin-left: 135px;
-    min-width: 435px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 140px;
-    min-width: 620px;
-  }
-}
-
-.email-input {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 19px;
-  padding-bottom: 20px;
-  border-style: none;
-  border-bottom: 2px solid #000000;
-
-  &::placeholder {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 106%;
-
+  &--phone {
     @media (min-width: $tablet-width) {
-      font-size: 19px;
-      line-height: 95%;
-      padding-left: 10px;
+      background-color: $light-gray-color;
+      margin-left: 125px;
+      min-width: 420px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 125px;
+      min-width: 620px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    background-color: $light-gray-color;
-    margin-left: 125px;
-    min-width: 420px;
-  }
+  &--email {
+    @media (min-width: $tablet-width) {
+      background-color: $light-gray-color;
+      margin-left: 125px;
+      min-width: 420px;
+    }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 125px;
-    min-width: 610px;
+    @media (min-width: $desktop-width) {
+      margin-left: 125px;
+      min-width: 620px;
+    }
   }
 }
 
@@ -303,8 +296,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 170px;
-    min-width: 270px;
+    margin-left: 120px;
+    min-width: 430px;
     min-height: 142px;
   }
 

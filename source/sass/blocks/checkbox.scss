@@ -17,14 +17,18 @@
 }
 
 .checkbox__label {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 106%;
   color: #000000;
+  padding-left: 61px;
+  min-height: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 95%;
+    min-height: 52px;
   }
 }
 
@@ -35,10 +39,11 @@
 }
 
 .checkbox__input + .checkbox__label::before {
+  position: absolute;
   content: "";
   width: 38px;
   height: 38px;
-  margin-right: 19px;
+  left: 0;
   border: 2px solid $gray-color;
   background-repeat: no-repeat;
   background-position: center center;

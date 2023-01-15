@@ -9,8 +9,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    background-color: $background-gray-color;
     padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white-color;
+    border-bottom: 1px solid $light-gray-color;
   }
 }
 
@@ -27,7 +31,6 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 141%;
-    border: none;
   }
 }
 

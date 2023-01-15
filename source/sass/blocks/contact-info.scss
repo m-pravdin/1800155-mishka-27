@@ -1,27 +1,33 @@
 .contact-info {
-  padding-left: 30px;
-  padding-right: 30px;
   margin-bottom: 62px;
+  grid-column: 2 / 4;
+
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 4;
+    gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    gap: 30px;
   }
 }
 
 .contact-info__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 76px 1fr;
   font-size: 14px;
   line-height: 30px;
   font-style: normal;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
 }
 
 .contact-info__name {
   display: inline-block;
-  min-width: 76px;
 }
 
 .contact-info__email {
