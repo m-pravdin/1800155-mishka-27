@@ -17,6 +17,7 @@
 }
 
 .contacts__title {
+  position: relative;
   font-weight: 700;
   font-size: 25px;
   line-height: 120%;
@@ -29,6 +30,17 @@
     font-size: 43px;
     line-height: 116%;
     grid-column: 1 / 2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/flag.svg");
+      background-size: 47px 81px;
+      background-repeat: no-repeat;
+      right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

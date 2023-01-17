@@ -1,0 +1,70 @@
+.category-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 100%;
+      background-image: url("../../img/zigzag-fil.svg");
+      bottom: 0;
+    }
+  }
+}
+
+
+.category-products__item {
+  background-color: $accent-color;
+  padding-left: 24px;
+  padding-top: 30px;
+  padding-bottom: 31px;
+
+  &--toys {
+    background-color: $second-accent-color;
+    background-image: url("../../img/toy.svg");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: 240px 20px;
+
+    @media (min-width: $desktop-width) {
+      background-position: 420px 20px;
+    }
+  }
+
+  &--interior {
+    background-image: url("../../img/interior.svg");
+    background-size: 40px 62px;
+    background-repeat: no-repeat;
+    background-position: 250px 20px;
+
+    @media (min-width: $desktop-width) {
+      background-position: 440px 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+}
+
+.category-products__link {
+  display: inline-block;
+  width: 130px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 126%;
+  color: $white-color;
+  text-decoration: none;
+}
