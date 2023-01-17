@@ -26,21 +26,30 @@
   margin-bottom: 28px;
   grid-column: 2 / 3;
 
-  @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 116%;
-    grid-column: 1 / 2;
-
-    &::after {
+  &::after {
+    @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       width: 47px;
       height: 81px;
-      background-image: url("../../img/flag.svg");
+      background-image: url("data:image/svg+xml,%3Csvg width='47' height='81' viewBox='0 0 47 81' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z' fill='%2363D1BB'/%3E%3Cpath d='M3.83262 0.0996094H0V81.0001H3.83262V0.0996094Z' fill='%23231F20'/%3E%3C/svg%3E%0A");
       background-size: 47px 81px;
       background-repeat: no-repeat;
       right: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -105px;
+      bottom: -10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 116%;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {

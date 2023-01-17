@@ -31,12 +31,21 @@
 }
 
 .contact-info__email {
-  color: #444444;
+  position: relative;
+  color: $gray-color;
   text-decoration: none;
-  border-bottom: 1px #62d1ba solid;
   padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 170px;
+    border-bottom: 1px solid $accent-color;
+    bottom: calc(100% - 30px);
+    left: 0;
   }
 }
