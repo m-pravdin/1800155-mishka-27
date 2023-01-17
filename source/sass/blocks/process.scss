@@ -20,10 +20,13 @@
 .process__info {
   display: contents;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 96px 57px 60px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 57px 60px 80px;
   }
 }
 
@@ -47,13 +50,31 @@
     order: -1;
     font-size: 20px;
     line-height: 120%;
-    margin-left: 107px;
+    margin-left: 57px;
+    width: auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     margin-bottom: 28px;
     padding: 0;
+    padding-top: 55px;
+    max-width: 178px;
+  }
+
+  &--img {
+    background-image: url("../../img/video.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 22px;
+    background-position: 30px 10px;
+
+    @media (min-width: $tablet-width) {
+      background-position: 15px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 0 5px;
+    }
   }
 }
 
@@ -106,7 +127,7 @@
     margin-left: 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     margin-bottom: 50px;
     max-width: 253px;
