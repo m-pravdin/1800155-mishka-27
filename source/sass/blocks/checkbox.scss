@@ -21,7 +21,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 106%;
-  color: #000000;
+  color: $dark-color;
   padding-left: 61px;
   min-height: 38px;
 
@@ -64,6 +64,5 @@
 }
 
 .checkbox__input:checked + .checkbox__label::before {
-  background-image: url("../../img/tick.svg");
+  background-image: url("data:image/svg+xml,%3Csvg width='33' height='22' viewBox='0 0 33 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.3704 1.35683L31.0098 0L11.5739 19.2863L1.95311 9.69163L0.59259 11.0485L10.2134 20.6432L11.5739 22L13.0316 20.6432L32.3704 1.35683Z' fill='black'/%3E%3C/svg%3E%0A");
 }
-
