@@ -130,7 +130,7 @@
         <div class="process__info">
           <h2 class="process__title process__title--img">Процесс производства</h2>
           <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="process__button button">Сделать заказ</button>
+          <button class="process__button add-to-cart button">Сделать заказ</button>
         </div>
         <div class="process__video">
           <img class="process__play" src="./img/process/play.svg" width="102" height="77" alt="Иконка воспроизведения видео.">
@@ -172,30 +172,31 @@
     </footer>
 
     <!-- Section Popup -->
-    <div class="popup-wrapper">
+    <div class="popup-wrapper popup-wrapper--closed">
       <div class="popup">
-        <p class="popup__title">Добавить в корзину</p>
+        <h2 class="popup__title">Добавить в&nbsp;корзину</h2>
         <form class="popup__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="popup__fieldset">
             <legend class="popup__description">Выберите размер:</legend>
             <ul class="popup__list">
-              <li class="radio">
-                <input class="radio__input" type="radio" id="size-s" name="size" value="s" checked>
-                <label class="radio__label" for="size-s"></label>
+              <li class="popup__radio">
+                <input class="popup__radio-input" type="radio" id="size-s" name="size" value="S" checked>
+                <label class="popup__radio-label" for="size-s">S</label>
               </li>
-              <li class="radio">
-                <input class="radio__input" type="radio" id="size-m" name="size" value="m">
-                <label class="radio__label" for="size-m"></label>
+              <li class="popup__radio">
+                <input class="popup__radio-input" type="radio" id="size-m" name="size" value="M">
+                <label class="popup__radio-label" for="size-m">M</label>
               </li>
-              <li class="radio">
-                <input class="radio__input" type="radio" id="size-l" name="size" value="l">
-                <label class="radio__label" for="size-l"></label>
+              <li class="popup__radio">
+                <input class="popup__radio-input" type="radio" id="size-l" name="size" value="L">
+                <label class="popup__radio-label" for="size-l">L</label>
               </li>
             </ul>
           </fieldset>
-          <button class="popup__button" type="submit">Добавить</button>
+          <button class="popup__button button" type="submit">Добавить</button>
         </form>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

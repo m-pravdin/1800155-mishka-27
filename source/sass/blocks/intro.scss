@@ -1,12 +1,6 @@
 .intro {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    height: 627px;
-    background-image: url("../img/intro/hero-desktop 2.jpg");
-    background-position: 0 2px;
-  }
 }
 
 .intro__title-wrapper {
@@ -20,9 +14,9 @@
   padding-right: 30px;
 
   @media (min-width: $tablet-width) {
-    height: 627px;
+    height: 600px;
     background-image: url("../img/intro/hero-desktop 2.jpg");
-    background-position: 0 2px;
+    background-position: 0 -50px;
   }
 }
 
