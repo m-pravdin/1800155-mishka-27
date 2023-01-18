@@ -1,8 +1,8 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let popupBlock = document.querySelector('.popup-wrapper--closed')
-let popupButton = document.querySelector('.add-to-cart')
-let popupButtonAdd = document.querySelector('.popup__button')
+let popupBlock = document.querySelector('.popup-wrapper--closed');
+let popupButton = document.querySelector('.add-to-cart');
+let popupButtonAdd = document.querySelector('.popup__button');
 
 navMain.classList.remove('main-nav--nojs');
 
