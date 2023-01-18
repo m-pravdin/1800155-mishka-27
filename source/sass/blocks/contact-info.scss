@@ -35,6 +35,7 @@
   color: $gray-color;
   text-decoration: none;
   padding-bottom: 4px;
+  width: min-content;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -43,7 +44,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: 170px;
+    width: 100%;
     border-bottom: 1px solid $accent-color;
     bottom: calc(100% - 30px);
     left: 0;
