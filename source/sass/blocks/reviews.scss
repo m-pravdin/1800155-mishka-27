@@ -5,9 +5,13 @@
   @media (min-width: $tablet-width) {
     padding: 50px 50px 85px;
     min-height: 543px;
-    background-image: url("../../img/review/review-tablet-img.jpg");
+    background-image: url("../img/review/review-tablet-img.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review/review-tablet-img@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {

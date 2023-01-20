@@ -16,7 +16,11 @@
     <header class="main-header container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo logo" href="/">
-          <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
+            <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -102,7 +106,13 @@
               <dd class="options__value">15 см</dd>
             </div>
           </dl>
-          <img class="main-product__image" src="./img/product/triple-set-mobile.jpeg" alt="Изображение товара «Вязаные корзинки»">
+          <p class="main-product__image-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/product/triple-set-desktop.jpg 1x, ./img/product/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/product/triple-set-tablet.jpg 1x, ./img/product/triple-set-tablet@2x.jpg 2x">
+              <img class="main-product__image" src="./img/product/triple-set-mobile.jpg" srcset="./img/product/triple-set-mobile@2x.jpg 2x" alt="Изображение товара «Вязаные корзинки»">
+            </picture>
+          </p>
           <p class="main-product__price">
             Цена: 990 руб.
           </p>

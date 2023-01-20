@@ -131,6 +131,13 @@
   }
 }
 
+.logo__image {
+  @media (min-width: $desktop-width) {
+    width: 150px;
+    height: 72px;
+  }
+}
+
 .main-nav__submenu {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
