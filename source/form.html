@@ -16,7 +16,11 @@
     <header class="main-header container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo logo" href="/">
-          <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
+            <img class="logo__image" src="./img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка - логотип в шапке.">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
