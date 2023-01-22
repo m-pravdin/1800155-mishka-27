@@ -36,6 +36,10 @@
     @media (min-width: $desktop-width) {
       background-position: 420px 20px;
     }
+
+    &:hover {
+      background-color: $second-accent-hover-color;
+    }
   }
 
   &--interior {
@@ -46,6 +50,10 @@
 
     @media (min-width: $desktop-width) {
       background-position: 440px 20px;
+    }
+
+    &:hover {
+      background-color: $accent-hover-color;
     }
   }
 

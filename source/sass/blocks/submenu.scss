@@ -35,6 +35,14 @@
   @media (min-width: $desktop-width) {
     margin-right: 50px;
   }
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &:active {
+    color: $placeholder-color;
+  }
 }
 
 .submenu__description {

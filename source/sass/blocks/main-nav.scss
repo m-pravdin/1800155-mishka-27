@@ -129,6 +129,14 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .logo__image {

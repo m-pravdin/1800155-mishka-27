@@ -45,4 +45,8 @@
   &:hover {
     color: $link-hover-color;
   }
+
+  &:active {
+    color: $placeholder-color;
+  }
 }

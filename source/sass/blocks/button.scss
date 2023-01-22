@@ -9,4 +9,14 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: $gray-color;
+    color: $white-color;
+  }
+
+  &:active {
+    background-color: $gray-color;
+    color: $button-text-active-color;
+  }
 }
