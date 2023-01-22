@@ -25,6 +25,11 @@
     align-items: center;
     padding: 0;
     border: none;
+
+    &--hover {
+      color: $accent-color;
+      background-color: $accent-color;
+    }
   }
 }
 
@@ -34,7 +39,9 @@
 
   &--search {
     @media (min-width: $tablet-width) {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 82px;
       height: 88px;
       border-right: 1px solid $light-gray-color;
@@ -49,9 +56,25 @@
   }
 }
 
+.user-list__link:hover + .icon-search {
+  background-color: $accent-color;
+}
+
 .user-list__icon {
   margin-right: 25px;
   vertical-align: middle;
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+  }
 }
 
 .search-text {
