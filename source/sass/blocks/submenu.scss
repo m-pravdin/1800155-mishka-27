@@ -26,11 +26,12 @@
   }
 }
 
-.submenu__item {
+.submenu__link {
   font-weight: 700;
   font-size: 15px;
   line-height: 160%;
   color: $dark-color;
+  text-decoration: none;
 
   @media (min-width: $desktop-width) {
     margin-right: 50px;

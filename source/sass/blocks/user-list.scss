@@ -17,7 +17,6 @@
 }
 
 .user-list__item {
-  padding: 27px 32px 27px 30px;
   border-bottom: 1px solid $light-gray-color;
 
   @media (min-width: $tablet-width) {
@@ -29,8 +28,11 @@
 }
 
 .user-list__link {
+  display: block;
   text-decoration: none;
   color: $dark-color;
+  padding: 27px 32px 27px 30px;
+
 
   &--search {
     @media (min-width: $tablet-width) {
@@ -54,7 +56,10 @@
 
   &--cart {
     @media (min-width: $tablet-width) {
-      display: block;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0;
 
       &:hover .user-list__icon--cart {
         fill: $accent-color;

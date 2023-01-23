@@ -120,6 +120,7 @@
 
   &:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 
   &:active {
@@ -159,6 +160,7 @@
   align-self: center;
   padding: 18px 20px;
   margin-bottom: 33px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     order: 4;

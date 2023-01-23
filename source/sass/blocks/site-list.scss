@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     background-color: $white-color;
     border-bottom: 1px solid $light-gray-color;
   }
@@ -29,8 +30,20 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    height: 88px;
     font-size: 17px;
     line-height: 141%;
+    padding-right: 10px;
+
+    &:not(:last-child) {
+      border-right: 1px solid $light-gray-color;
+    }
+
+    &:not(:first-child) {
+      padding-left: 30px;
+    }
   }
 }
 

@@ -154,11 +154,15 @@
 }
 
 .main-product__button {
+  text-align: center;
+
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    align-self: flex-end;
     grid-column: 3 / 4;
     height: 52px;
     font-size: 17px;
