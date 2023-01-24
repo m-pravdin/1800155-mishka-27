@@ -353,6 +353,11 @@
   &:active {
     border-color: $accent-color;
   }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
 }
 
 .form__info {
