@@ -49,4 +49,15 @@
     bottom: calc(100% - 30px);
     left: 0;
   }
+
+  &:hover {
+    color: $accent-color;
+    border-color: $second-accent-hover-color;
+  }
+
+  &:active {
+    &::after {
+      border-color: $border-active-color;
+    }
+  }
 }

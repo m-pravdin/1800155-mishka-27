@@ -1,13 +1,28 @@
-.copyright__text {
-  align-self: center;
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 19px;
-  line-height: 18px;
-  color: #000000;
-  margin-right: 27px;
+  line-height: 95%;
+  color: $dark-color;
+  text-decoration: none;
+  padding-top: 22px;
+  fill: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  &:hover {
+    fill: $second-accent-hover-color;
+  }
+
+  &:active {
+    fill: $link-second-hover-color;
+  }
 }
 
-.copyright__link {
-  display: inline-flex;
-  align-self: center;
+.copyright__image {
+  margin-left: 20px;
 }

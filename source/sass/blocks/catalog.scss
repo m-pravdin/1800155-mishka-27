@@ -1,4 +1,8 @@
 .catalog-container {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 64px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 105px;
   }
