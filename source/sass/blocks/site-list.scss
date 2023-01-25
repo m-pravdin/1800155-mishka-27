@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     padding: 20px 0;
+    gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,10 +51,6 @@
 .site-list__link {
   text-decoration: none;
   color: $dark-color;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 19px;
-  }
 
   &:hover {
     color: $link-hover-color;

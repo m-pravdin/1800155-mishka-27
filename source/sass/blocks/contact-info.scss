@@ -1,5 +1,5 @@
 .contact-info {
-  margin-bottom: 62px;
+  margin-bottom: 33px;
   grid-column: 2 / 4;
 
 
@@ -24,6 +24,7 @@
   font-size: 14px;
   line-height: 30px;
   font-style: normal;
+  margin-bottom: 26px;
 }
 
 .contact-info__name {
@@ -46,8 +47,8 @@
     content: "";
     width: 100%;
     border-bottom: 1px solid $accent-color;
-    bottom: calc(100% - 30px);
-    left: 0;
+    bottom: calc(100% - 27px);
+    left: 1px;
   }
 
   &:hover {

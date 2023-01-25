@@ -39,7 +39,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 82px;
+      width: 84px;
       height: 88px;
       border-right: 1px solid $light-gray-color;
       border-left: 1px solid $light-gray-color;
@@ -95,7 +95,8 @@
     margin-right: 22px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 25px;
+      margin-left: 31px;
+      margin-right: 30px;
     }
   }
 }
