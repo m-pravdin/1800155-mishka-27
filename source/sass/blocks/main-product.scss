@@ -96,7 +96,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     font-size: 17px;
-    line-height: 176%;
+    line-height: 178%;
+    margin-top: -15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,6 +110,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -148,6 +150,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    align-self: center;
+    margin-bottom: 19px;
+    margin-right: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,8 +163,8 @@
 .main-product__button {
   text-align: center;
 
-  @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+  @media (min-width: $tablet-width) {
+    padding: 5px 0;
   }
 
   @media (min-width: $desktop-width) {

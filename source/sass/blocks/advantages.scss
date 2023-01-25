@@ -6,8 +6,8 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    max-height: 409px;
-    padding-top: 34px;
+    max-height: 530px;
+    padding-top: 18px;
   }
 }
 
@@ -21,6 +21,9 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 56px;
   }
 
   &:last-child {

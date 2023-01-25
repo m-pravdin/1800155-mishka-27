@@ -6,10 +6,11 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 50px 1fr 1fr 50px;
-    padding-top: 0;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 174px 350px 1fr;
     grid-template-rows: min-content 1fr min-content;
     padding: 71px 50px 105px 50px;
@@ -35,7 +36,8 @@
       background-image: url("data:image/svg+xml,%3Csvg width='47' height='81' viewBox='0 0 47 81' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.76611 3.86183V42.3812L47 23.072L7.76611 3.86183ZM0 80.9005V0H3.83261V80.9005H0Z' fill='%2363D1BB'/%3E%3Cpath d='M3.83262 0.0996094H0V81.0001H3.83262V0.0996094Z' fill='%23231F20'/%3E%3C/svg%3E%0A");
       background-size: 47px 81px;
       background-repeat: no-repeat;
-      right: 0;
+      right: 3px;
+      top: -25px;
     }
 
     @media (min-width: $desktop-width) {
@@ -47,7 +49,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 116%;
-    grid-column: 1 / -1;
+    grid-column: 2 / 4;
     display: flex;
     align-items: center;
   }
@@ -88,6 +90,7 @@
     font-size: 17px;
     line-height: 116%;
     justify-self: center;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {

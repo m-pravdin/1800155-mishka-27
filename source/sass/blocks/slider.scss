@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 175px;
+    padding-top: 43px;
   }
 }
 
@@ -58,6 +59,7 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     max-width: 175px;
+    margin-top: -16px;
     padding: 16px 26px;
     font-size: 17px;
   }

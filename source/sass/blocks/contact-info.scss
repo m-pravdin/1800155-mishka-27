@@ -5,9 +5,10 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / 4;
+    grid-template-columns: 285px 1fr;
+    grid-column: 2 / 4;
     gap: 50px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +26,11 @@
   line-height: 30px;
   font-style: normal;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 176%;
+  }
 }
 
 .contact-info__name {
