@@ -81,7 +81,7 @@
 }
 
 .user-list__icon {
-  margin-right: 25px;
+  margin-right: 24px;
   vertical-align: middle;
   fill: $icon-color;
 
@@ -92,6 +92,8 @@
   }
 
   &--cart {
+    margin-right: 22px;
+
     @media (min-width: $tablet-width) {
       margin-left: 25px;
     }
