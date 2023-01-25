@@ -2,7 +2,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 347px;
+    grid-template-columns: 1fr 361px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,6 +140,12 @@
 }
 
 .logo__image {
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+    margin-top: 5px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 150px;
     height: 72px;

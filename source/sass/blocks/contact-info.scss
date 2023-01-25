@@ -1,13 +1,14 @@
 .contact-info {
-  margin-bottom: 62px;
+  margin-bottom: 33px;
   grid-column: 2 / 4;
 
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / 4;
+    grid-template-columns: 285px 1fr;
+    grid-column: 2 / 4;
     gap: 50px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +25,12 @@
   font-size: 14px;
   line-height: 30px;
   font-style: normal;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 176%;
+  }
 }
 
 .contact-info__name {
@@ -46,8 +53,8 @@
     content: "";
     width: 100%;
     border-bottom: 1px solid $accent-color;
-    bottom: calc(100% - 30px);
-    left: 0;
+    bottom: calc(100% - 27px);
+    left: 1px;
   }
 
   &:hover {
