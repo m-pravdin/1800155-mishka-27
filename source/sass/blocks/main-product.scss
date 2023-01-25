@@ -116,12 +116,13 @@
 }
 
 .main-product__image-wrapper {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     grid-column: 2/-1;
     grid-row: 2/6;
     width: 334px;
     height: 404px;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
