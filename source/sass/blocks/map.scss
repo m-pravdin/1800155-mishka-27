@@ -1,0 +1,7 @@
+.map__image-wrapper {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+}

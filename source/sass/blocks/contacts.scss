@@ -3,17 +3,22 @@
   grid-template-columns: 30px 76px 183px 30px;
   padding-top: 38px;
   padding-bottom: 39px;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 50px 1fr 1fr 50px;
     padding-top: 70px;
     padding-bottom: 50px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 174px 350px 1fr;
     grid-template-rows: min-content 1fr min-content;
     padding: 71px 50px 105px 50px;
+    max-width: 1150px;
   }
 }
 
@@ -75,6 +80,10 @@
 
 .contacts__frame {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 527px;
+  }
 }
 
 .contacts__button {

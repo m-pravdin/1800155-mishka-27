@@ -3,6 +3,7 @@ let navToggle = document.querySelector('.main-nav__toggle');
 let popupBlock = document.querySelector('.popup-wrapper--closed');
 let popupButton = document.querySelector('.add-to-cart');
 let popupButtonAdd = document.querySelector('.popup__button');
+let mapImage = document.querySelector('.map__image-wrapper')
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -23,4 +24,8 @@ if (popupButton) {
       popupBlock.classList.add('popup-wrapper--opened');
       }
   });
+}
+
+if(mapImage) {
+  mapImage.classList.add('visually-hidden')
 }

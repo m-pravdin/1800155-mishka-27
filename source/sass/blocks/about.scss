@@ -1,13 +1,17 @@
 .about {
   padding: 30px 30px 0 30px;
-
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 55px 50px 11px 50px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 68px 50px 90px 225px;
+    max-width: 1150px;
   }
 }
 

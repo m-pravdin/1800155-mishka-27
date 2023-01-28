@@ -17,7 +17,7 @@
 <body class="page__body">
 
   <!-- Header -->
-  <header class="main-header container">
+  <header class="main-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo logo" href="/">
         <picture>
@@ -77,7 +77,7 @@
   </header>
 
   <!-- Home Main -->
-  <main class="main-container container">
+  <main class="main-container">
     <h1 class="visually-hidden">Интернет-магазин «Мишка» - мягкие игрушки связанные с любовью!</h1>
 
     <!-- Section Intro -->
@@ -232,7 +232,21 @@
           <span class="contact-info__value">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</span>
         </div>
       </address>
-      <div class="contacts__map">
+      <div class="contacts__map map">
+        <figure class="map__image-wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" type="image/webp"
+              srcset="./img/map/map-desktop.webp 1x, ./img/map/map-desktop@2x.webp 2x">
+            <source media="(min-width: 1150px)" type="image/jpg"
+              srcset="./img/map/map-desktop.jpg 1x, ./img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+            srcset="./img/map/map-tablet.webp 1x, ./img/map/map-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/jpg"
+              srcset="./img/map/map-tablet.jpg 1x, ./img/map/map-tablet@2x.jpg 2x">
+            <img class="map__image" width="320" height="454" src="./img/map/map-mobile.jpg"
+              srcset="./img/map/map-mobile@2x.jpg 2x" alt="Карта с расположением магазина.">
+          </picture>
+        </figure>
         <iframe class="contacts__frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2999533596524!2d30.32209699295981!3d59.93878086896024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2str!4v1671319917703!5m2!1sru!2str"
           width="320" height="455" style="border: 0;" allowfullscreen="" loading="lazy"
@@ -243,44 +257,46 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer container">
-    <a class="footer__logo logo" href="#">
-      <svg width="102" height="34">
-        <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="27" height="17">
-            <use xlink:href="./img/sprite.svg#icon-vk"></use>
-          </svg>
-          <span class="visually-hidden">Мы вКонтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="24" height="19">
-            <use xlink:href="./img/sprite.svg#icon-youtube"></use>
-          </svg>
-          <span class="visually-hidden">Наш Ютуб</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="19" height="17">
-            <use xlink:href="./img/sprite.svg#icon-tg"></use>
-          </svg>
-          <span class="visually-hidden">Наш Телеграм</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="#">
-      Разработано
-      <svg class="copyright__image" width="27" height="34">
-        <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
-      </svg>
-    </a>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo logo" href="#">
+        <svg width="102" height="34">
+          <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
+        </svg>
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="27" height="17">
+              <use xlink:href="./img/sprite.svg#icon-vk"></use>
+            </svg>
+            <span class="visually-hidden">Мы вКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="24" height="19">
+              <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Наш Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="19" height="17">
+              <use xlink:href="./img/sprite.svg#icon-tg"></use>
+            </svg>
+            <span class="visually-hidden">Наш Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright copyright" href="#">
+        Разработано
+        <svg class="copyright__image" width="27" height="34">
+          <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
 
   <!-- Section Popup -->

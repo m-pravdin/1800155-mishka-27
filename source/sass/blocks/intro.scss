@@ -10,6 +10,9 @@
 
 .intro__title-wrapper {
   min-height: 281px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
   background-color: $light-gray-color;
   background-image: url("../img/intro/hero-mobile.jpg");
   background-position: 0 -19px;
@@ -23,6 +26,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 768px;
     height: 600px;
     background-image: url("../img/intro/hero-tablet.jpg");
     background-position: 0 -66px;
@@ -33,6 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1150px;
     height: 600px;
     background-image: url("../img/intro/hero-desktop.jpg");
 

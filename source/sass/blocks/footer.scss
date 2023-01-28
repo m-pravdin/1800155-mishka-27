@@ -1,8 +1,15 @@
 .footer {
+  width: 100%;
+  background-color: $light-gray-color;
+}
+
+.footer-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
   padding: 25px 30px 23px 30px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -10,6 +17,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 58px 50px;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
   }
 }
 

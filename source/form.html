@@ -91,104 +91,116 @@
 
           <!-- Type Inputs -->
           <fieldset class="form__fieldset form__fieldset--type">
-            <legend class="form__legend form__legend--type">Тип</legend>
-            <ul class="form__list form__list--type">
-              <li class="radio">
-                <input class="radio__input" type="radio" id="accessory" name="type" value="interior accessory"
-                  checked>
-                <label class="radio__label" for="accessory">Аксессуар для интерьера</label>
-              </li>
-              <li class="radio">
-                <input class="radio__input" type="radio" id="toy" name="type" value="children toy">
-                <label class="radio__label" for="toy">Детская игрушка</label>
-              </li>
-            </ul>
+            <div class="form__fieldset-inputs form__fieldset-inputs--type">
+              <p class="form__legend form__legend--type">Тип</p>
+              <ul class="form__list form__list--type">
+                <li class="radio">
+                  <input class="radio__input" type="radio" id="accessory" name="type" value="interior accessory"
+                    checked>
+                  <label class="radio__label" for="accessory">Аксессуар для интерьера</label>
+                </li>
+                <li class="radio">
+                  <input class="radio__input" type="radio" id="toy" name="type" value="children toy">
+                  <label class="radio__label" for="toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <!-- Color Inputs -->
           <fieldset class="form__fieldset form__fieldset--color">
-            <legend class="form__legend form__legend--color">Цвет</legend>
-            <ul class="form__list form__list--color">
-              <li class="checkbox checkbox--color">
-                <input class="checkbox__input" type="checkbox" id="white" name="color" value="white" checked>
-                <label class="checkbox__label form__label" for="white">Белый</label>
-              </li>
-              <li class="checkbox checkbox--color">
-                <input class="checkbox__input" type="checkbox" id="gray" name="color" value="gray" checked>
-                <label class="checkbox__label" for="gray">Серый</label>
-              </li>
-              <li class="checkbox checkbox--color">
-                <input class="checkbox__input" type="checkbox" id="tiffany" name="color" value="tiffany">
-                <label class="checkbox__label" for="tiffany">Тиффани</label>
-              </li>
-              <li class="checkbox checkbox--color">
-                <input class="checkbox__input" type="checkbox" id="black" name="color" value="black">
-                <label class="checkbox__label" for="black">Черный</label>
-              </li>
-              <li class="checkbox checkbox--color">
-                <input class="checkbox__input" type="checkbox" id="rose" name="color" value="rose">
-                <label class="checkbox__label" for="rose">Розовый</label>
-              </li>
-              <li class="checkbox checkbox--color">
-                <input class="checkbox__input" type="checkbox" id="orange" name="color" value="orange">
-                <label class="checkbox__label" for="orange">Оранжевый</label>
-              </li>
-            </ul>
+            <div class="form__fieldset-inputs form__fieldset-inputs--color">
+              <p class="form__legend form__legend--color">Цвет</p>
+              <ul class="form__list form__list--color">
+                <li class="checkbox checkbox--color">
+                  <input class="checkbox__input" type="checkbox" id="white" name="color" value="white" checked>
+                  <label class="checkbox__label form__label" for="white">Белый</label>
+                </li>
+                <li class="checkbox checkbox--color">
+                  <input class="checkbox__input" type="checkbox" id="gray" name="color" value="gray" checked>
+                  <label class="checkbox__label" for="gray">Серый</label>
+                </li>
+                <li class="checkbox checkbox--color">
+                  <input class="checkbox__input" type="checkbox" id="tiffany" name="color" value="tiffany">
+                  <label class="checkbox__label" for="tiffany">Тиффани</label>
+                </li>
+                <li class="checkbox checkbox--color">
+                  <input class="checkbox__input" type="checkbox" id="black" name="color" value="black">
+                  <label class="checkbox__label" for="black">Черный</label>
+                </li>
+                <li class="checkbox checkbox--color">
+                  <input class="checkbox__input" type="checkbox" id="rose" name="color" value="rose">
+                  <label class="checkbox__label" for="rose">Розовый</label>
+                </li>
+                <li class="checkbox checkbox--color">
+                  <input class="checkbox__input" type="checkbox" id="orange" name="color" value="orange">
+                  <label class="checkbox__label" for="orange">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <!-- Name Inputs -->
           <fieldset class="form__fieldset form__fieldset--user">
-            <legend class="form__legend form__legend--user">ФИО</legend>
-            <ul class="form__list form__list--user">
-              <li class="field">
-                <label class="field__label" for="name">Имя:</label>
-                <input class="text-input text-input--lighter" type="text" placeholder="Введите ваше имя*" id="name"
-                  name="user" required>
-              </li>
-              <li class="field">
-                <label class="field__label" for="lastname">Фамилия:</label>
-                <input class="text-input text-input--lighter" type="text" placeholder="Укажите фамилию*" id="lastname"
-                  name="user" required>
-              </li>
-              <li class="field">
-                <label class="field__label" for="patronymic">Отчество:</label>
-                <input class="text-input text-input--lighter" type="text" placeholder="Отчество, если желаете"
-                  id="patronymic" name="user">
-              </li>
-            </ul>
+            <div class="form__fieldset-inputs form__fieldset-inputs--user">
+              <p class="form__legend form__legend--user">ФИО</p>
+              <ul class="form__list form__list--user">
+                <li class="field">
+                  <label class="field__label" for="name">Имя:</label>
+                  <input class="text-input text-input--lighter" type="text" placeholder="Введите ваше имя*" id="name"
+                    name="user" required>
+                </li>
+                <li class="field">
+                  <label class="field__label" for="lastname">Фамилия:</label>
+                  <input class="text-input text-input--lighter" type="text" placeholder="Укажите фамилию*" id="lastname"
+                    name="user" required>
+                </li>
+                <li class="field">
+                  <label class="field__label" for="patronymic">Отчество:</label>
+                  <input class="text-input text-input--lighter" type="text" placeholder="Отчество, если желаете"
+                    id="patronymic" name="user">
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <!-- Phone Input -->
           <fieldset class="form__fieldset form__fieldset--phone">
-            <legend class="form__legend">ТЕЛ</legend>
-            <p class="text-input__wrapper">
-              <input class="text-input" type="tel" id="phone" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                required>
-              <svg class="text-input__icon" width="25" height="24">
-                <use xlink:href="./img/sprite.svg#icon-phone"></use>
-              </svg>
-            </p>
-            <label class="phone-label" for="phone"></label>
+            <div class="form__fieldset-inputs form__fieldset-inputs--phone">
+              <p class="form__legend">ТЕЛ</p>
+              <p class="text-input-wrapper">
+                <input class="text-input" type="phone" id="phone" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                  required>
+                <svg class="text-input-icon" width="25" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+              </p>
+              <label class="phone-label" for="phone"></label>
+            </div>
           </fieldset>
 
           <!-- Email Input -->
           <fieldset class="form__fieldset form__fieldset--email">
-            <legend class="form__legend">E-mail</legend>
-            <p class="text-input__wrapper">
-              <input class="text-input" type="email" id="email" name="user-email" placeholder="Ваш Email*" required>
-              <svg class="text-input__icon" width="32" height="21">
-                <use xlink:href="./img/sprite.svg#icon-email"></use>
-              </svg>
-            </p>
-            <label class="email-label" for="email"></label>
+            <div class="form__fieldset-inputs form__fieldset-inputs--email">
+              <p class="form__legend">E-mail</p>
+              <p class="text-input-wrapper">
+                <input class="text-input" type="email" id="email" name="user-email" placeholder="Ваш Email*" required>
+                <svg class="text-input-icon" width="32" height="21">
+                  <use xlink:href="./img/sprite.svg#icon-email"></use>
+                </svg>
+              </p>
+              <label class="email-label" for="email"></label>
+            </div>
           </fieldset>
 
           <!-- Wishes Input -->
           <fieldset class="form__fieldset form__fieldset--wishes">
-            <legend class="form__legend form__legend--wishes">Доп</legend>
-            <label class="textarea-label visually-hidden" for="wishes">Пожелания к заказу</label>
-            <textarea class="textarea-input" id="wishes" name="user-wishes"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form__fieldset-inputs form__fieldset-inputs--wishes">
+              <p class="form__legend form__legend--wishes">Доп</p>
+              <label class="textarea-label visually-hidden" for="wishes">Пожелания к заказу</label>
+              <textarea class="textarea-input" id="wishes" name="user-wishes"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </fieldset>
 
           <div class="form__fieldset-inputs form__fieldset-inputs--info-button">
@@ -200,44 +212,46 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer container">
-    <a class="footer__logo logo" href="/index.html">
-      <svg width="102" height="34">
-        <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="27" height="17">
-            <use xlink:href="./img/sprite.svg#icon-vk"></use>
-          </svg>
-          <span class="visually-hidden">Мы вКонтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="24" height="19">
-            <use xlink:href="./img/sprite.svg#icon-youtube"></use>
-          </svg>
-          <span class="visually-hidden">Наш Ютуб</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="19" height="17">
-            <use xlink:href="./img/sprite.svg#icon-tg"></use>
-          </svg>
-          <span class="visually-hidden">Наш Телеграм</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-      Разработано
-      <svg class="copyright__image" width="27" height="34">
-        <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
-      </svg>
-    </a>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo logo" href="#">
+        <svg width="102" height="34">
+          <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
+        </svg>
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="27" height="17">
+              <use xlink:href="./img/sprite.svg#icon-vk"></use>
+            </svg>
+            <span class="visually-hidden">Мы вКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="24" height="19">
+              <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Наш Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="19" height="17">
+              <use xlink:href="./img/sprite.svg#icon-tg"></use>
+            </svg>
+            <span class="visually-hidden">Наш Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright copyright" href="#">
+        Разработано
+        <svg class="copyright__image" width="27" height="34">
+          <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
   <script src="./js/script.js"></script>
 </body>

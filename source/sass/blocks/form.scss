@@ -25,11 +25,19 @@
 
 .form-wrapper {
   padding: 18px 30px 55px 30px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 60px;
     padding-bottom: 50px;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
   }
 }
 
@@ -40,12 +48,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    line-height: 177%;
+    line-height: 176%;
     padding: 0 50px;
-    max-width: 680px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     max-width: 702px;
     padding: 0;
     margin: 0 auto;
@@ -66,9 +73,7 @@
     margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 19px;
-      margin-left: 49px;
-      margin-bottom: 49px;
+      margin: 0;
     }
   }
 
@@ -77,10 +82,7 @@
 
     @media (min-width: $tablet-width) {
       background-color: $light-gray-color;
-      margin-bottom: 49px;
-      padding-top: 43px;
-      padding-left: 47px;
-      padding-bottom: 45px;
+      margin: 0;
     }
   }
 
@@ -119,55 +121,55 @@
   }
 }
 
-// .form__fieldset-inputs {
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
+.form__fieldset-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-//   @media (min-width: $tablet-width) {
-//     padding: 50px 50px;
+  @media (min-width: $tablet-width) {
+    padding: 50px 50px;
 
-//     &--type {
-//       flex-direction: row;
-//     }
+    &--type {
+      flex-direction: row;
+    }
 
-//     &--color {
-//       flex-direction: row;
-//     }
+    &--color {
+      flex-direction: row;
+    }
 
-//     &--user {
-//       flex-direction: row;
-//     }
+    &--user {
+      flex-direction: row;
+    }
 
-//     &--phone {
-//       padding: 50px 50px 12px 50px;
-//       align-items: center;
-//       flex-direction: row;
-//     }
+    &--phone {
+      padding: 50px 50px 12px 50px;
+      align-items: center;
+      flex-direction: row;
+    }
 
-//     &--email {
-//       padding: 12px 50px 50px 50px;
-//       align-items: center;
-//       flex-direction: row;
-//     }
+    &--email {
+      padding: 12px 50px 50px 50px;
+      align-items: center;
+      flex-direction: row;
+    }
 
-//     &--wishes {
-//       flex-direction: row;
-//     }
+    &--wishes {
+      flex-direction: row;
+    }
 
-//     &--info-button {
-//       flex-direction: row-reverse;
-//       justify-content: space-between;
-//       align-items: center;
-//       padding-bottom: 0;
+    &--info-button {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0;
 
-//       @media (min-width: $desktop-width) {
-//         max-width: 790px;
-//         margin-left: 182px;
-//       }
-//     }
-//   }
-// }
+      @media (min-width: $desktop-width) {
+        max-width: 790px;
+        margin-left: 182px;
+      }
+    }
+  }
+}
 
 .form__legend {
   font-weight: 700;
@@ -176,6 +178,8 @@
   text-transform: uppercase;
   color: $accent-color;
   min-width: 65px;
+  margin: 0;
+  padding: 0;
 
   &--type {
     margin-bottom: 30px;
@@ -209,8 +213,7 @@
 
   &--type {
     @media (min-width: $tablet-width) {
-      margin-left: 170px;
-      margin-top: -30px;
+      margin-left: 120px;
       gap: 32px;
     }
 
@@ -223,7 +226,7 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       flex-wrap: wrap;
-      margin-left: 170px;
+      margin-left: 120px;
       max-width: 465px;
       gap: 32px;
     }
@@ -246,7 +249,7 @@
   }
 }
 
-.text-input__wrapper {
+.text-input-wrapper {
   display: flex;
   align-items: center;
   position: relative;
@@ -305,15 +308,15 @@
   }
 }
 
-.text-input:hover + .text-input__icon {
+.text-input:hover + .text-input-icon {
   fill: $accent-color;
 }
 
-.text-input:focus + .text-input__icon {
+.text-input:focus + .text-input-icon {
   fill: $accent-color;
 }
 
-.text-input__icon {
+.text-input-icon {
   position: absolute;
   right: 7px;
 
@@ -321,7 +324,7 @@
     right: 22px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     right: 7px;
   }
 }
