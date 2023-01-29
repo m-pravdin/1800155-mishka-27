@@ -4,13 +4,13 @@
   padding-top: 38px;
   padding-bottom: 39px;
   width: 100%;
-  max-width: 260px;
+  max-width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 50px 1fr 1fr 50px;
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 57px;
     max-width: 768px;
   }
 
@@ -70,6 +70,10 @@
 .contacts__map {
   grid-column: 1 / -1;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;

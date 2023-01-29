@@ -8,9 +8,10 @@
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
+    max-width: 768px;
+    height: 457px;
     grid-template-columns: 1fr 175px;
-    padding: 85px 50px 50px 50px;
+    padding: 90px 50px 50px 50px;
     background-image: url("../img/review/review-tablet-img.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
@@ -78,8 +79,9 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     max-width: 175px;
-    margin-top: -16px;
-    padding: 16px 26px;
+    margin-top: -13px;
+    padding: 15px 26px;
     font-size: 17px;
+    height: 52px;
   }
 }

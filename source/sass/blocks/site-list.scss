@@ -55,6 +55,10 @@
     padding-right: 19px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-right: 28px;
+  }
+
   &:hover {
     color: $link-hover-color;
   }
