@@ -1,19 +1,22 @@
 .process {
-  margin: 0 29px 58px 29px;
   padding-top: 22px;
   display: flex;
   flex-direction: column;
   border: 1px solid $light-gray-color;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 49px 0 49px;
     padding-top: 0;
     padding-bottom: 46px;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row-reverse;
     padding-bottom: 0;
+    max-width: 1050px;
   }
 
   &:hover {
@@ -111,6 +114,7 @@
     height: 455px;
     background-image: url("../img/process/video-desktop-1.jpg");
     background-repeat: no-repeat;
+    margin: 0;
   }
 }
 

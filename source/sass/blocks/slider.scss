@@ -1,10 +1,30 @@
 .slider {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+  padding-top: 42px;
+  padding-bottom: 49px;
   display: grid;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
+    max-width: 768px;
+    height: 457px;
     grid-template-columns: 1fr 175px;
-    padding-top: 43px;
+    padding: 90px 50px 50px 50px;
+    background-image: url("../img/review/review-tablet-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review/review-tablet-img@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 50px 85px 174px;
+    background-position: 50px 0;
+    max-width: 1150px;
   }
 }
 
@@ -59,8 +79,9 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     max-width: 175px;
-    margin-top: -16px;
-    padding: 16px 26px;
+    margin-top: -13px;
+    padding: 15px 26px;
     font-size: 17px;
+    height: 52px;
   }
 }

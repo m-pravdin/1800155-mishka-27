@@ -8,8 +8,8 @@
   <link rel="icon" href="./favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="manifest" href="./manifest.webmanifest">
-  <title>HTML Academy: Мишка</title>
+  <link rel="manifest" href="./manifest/manifest.webmanifest">
+  <title>HTML Academy: Мишка - Страница каталога товаров</title>
 </head>
 
 <body class="page__body">
@@ -17,7 +17,7 @@
   <!-- Header -->
   <header class="main-header main-header--inner container">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="main-nav__logo logo" href="/">
+      <a class="main-nav__logo logo" href="/index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
@@ -47,7 +47,7 @@
               <svg class="user-list__icon user-list__icon--search" width="18" height="18">
                 <use xlink:href="./img/sprite.svg#icon-search"></use>
               </svg>
-              <span class="search-text">Поиск по сайту</span>
+              <span class="user-list__text">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item">
@@ -181,7 +181,7 @@
         <a class="process__button button">Сделать заказ</a>
       </div>
       <div class="process__video">
-        <svg class="process__play">
+        <svg class="process__play" width="101" height="77">
           <use xlink:href="./img/sprite.svg#icon-play"></use>
         </svg>
         <button class="process__play-button button" type="button">
@@ -192,44 +192,46 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer container">
-    <a class="footer__logo logo" href="#">
-      <svg width="102" height="34">
-        <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="27" height="17">
-            <use xlink:href="./img/sprite.svg#icon-vk"></use>
-          </svg>
-          <span class="visually-hidden">Мы вКонтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="24" height="19">
-            <use xlink:href="./img/sprite.svg#icon-youtube"></use>
-          </svg>
-          <span class="visually-hidden">Наш Ютуб</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="19" height="17">
-            <use xlink:href="./img/sprite.svg#icon-tg"></use>
-          </svg>
-          <span class="visually-hidden">Наш Телеграм</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="#">
-      Разработано
-      <svg class="copyright__image" width="27" height="34">
-        <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
-      </svg>
-    </a>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo logo" href="#">
+        <svg width="102" height="34">
+          <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
+        </svg>
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="27" height="17">
+              <use xlink:href="./img/sprite.svg#icon-vk"></use>
+            </svg>
+            <span class="visually-hidden">Мы вКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="24" height="19">
+              <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Наш Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="19" height="17">
+              <use xlink:href="./img/sprite.svg#icon-tg"></use>
+            </svg>
+            <span class="visually-hidden">Наш Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright copyright" href="#">
+        Разработано
+        <svg class="copyright__image" width="27" height="34">
+          <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
 
   <!-- Section Popup -->

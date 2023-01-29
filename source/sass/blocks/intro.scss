@@ -4,12 +4,15 @@
   background-color: $background-gray-color;
 
   @media (min-width: $tablet-width) {
-    max-height: 692px;
+    max-height: 693px;
   }
 }
 
 .intro__title-wrapper {
   min-height: 281px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
   background-color: $light-gray-color;
   background-image: url("../img/intro/hero-mobile.jpg");
   background-position: 0 -19px;
@@ -23,6 +26,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 768px;
     height: 600px;
     background-image: url("../img/intro/hero-tablet.jpg");
     background-position: 0 -66px;
@@ -33,6 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1150px;
     height: 600px;
     background-image: url("../img/intro/hero-desktop.jpg");
 
@@ -56,5 +61,10 @@
     font-size: 43px;
     line-height: 116%;
     margin-top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 108%;
   }
 }

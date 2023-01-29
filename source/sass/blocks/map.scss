@@ -1,0 +1,17 @@
+.map__image-wrapper {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+}
+
+.map__image {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+  }
+}

@@ -8,8 +8,8 @@
   <link rel="icon" href="./favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="manifest" href="./manifest.webmanifest">
-  <title>HTML Academy: Мишка</title>
+  <link rel="manifest" href="./manifest/manifest.webmanifest">
+  <title>HTML Academy: Мишка - страница "Вязание на заказ"</title>
 </head>
 
 <body class="page__body">
@@ -17,7 +17,7 @@
   <!-- Header -->
   <header class="main-header main-header--inner container">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="main-nav__logo logo" href="/">
+      <a class="main-nav__logo logo" href="/index.html">
         <picture>
           <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
@@ -47,7 +47,7 @@
               <svg class="user-list__icon user-list__icon--search" width="18" height="18">
                 <use xlink:href="./img/sprite.svg#icon-search"></use>
               </svg>
-              <span class="search-text">Поиск по сайту</span>
+              <span class="user-list__text">Поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item">
@@ -76,10 +76,11 @@
 
   <!-- Form Main -->
   <main class="form-container">
-    <h1 class="form-container__title">Вязание на заказ</h2>
+    <h1 class="form-container__title">Вязание на заказ</h1>
 
       <!-- Form Wrapper-->
       <section class="form-wrapper">
+        <h2 class="visually-hidden">Форма для заполнения</h2>
         <p class="form-wrapper__text">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
           уточнить детали.
@@ -91,7 +92,7 @@
           <!-- Type Inputs -->
           <fieldset class="form__fieldset form__fieldset--type">
             <div class="form__fieldset-inputs form__fieldset-inputs--type">
-              <legend class="form__legend form__legend--type">Тип</legend>
+              <p class="form__legend form__legend--type">Тип</p>
               <ul class="form__list form__list--type">
                 <li class="radio">
                   <input class="radio__input" type="radio" id="accessory" name="type" value="interior accessory"
@@ -109,7 +110,7 @@
           <!-- Color Inputs -->
           <fieldset class="form__fieldset form__fieldset--color">
             <div class="form__fieldset-inputs form__fieldset-inputs--color">
-              <legend class="form__legend form__legend--color">Цвет</legend>
+              <p class="form__legend form__legend--color">Цвет</p>
               <ul class="form__list form__list--color">
                 <li class="checkbox checkbox--color">
                   <input class="checkbox__input" type="checkbox" id="white" name="color" value="white" checked>
@@ -142,7 +143,7 @@
           <!-- Name Inputs -->
           <fieldset class="form__fieldset form__fieldset--user">
             <div class="form__fieldset-inputs form__fieldset-inputs--user">
-              <legend class="form__legend form__legend--user">ФИО</legend>
+              <p class="form__legend form__legend--user">ФИО</p>
               <ul class="form__list form__list--user">
                 <li class="field">
                   <label class="field__label" for="name">Имя:</label>
@@ -166,11 +167,11 @@
           <!-- Phone Input -->
           <fieldset class="form__fieldset form__fieldset--phone">
             <div class="form__fieldset-inputs form__fieldset-inputs--phone">
-              <legend class="form__legend">ТЕЛ</legend>
-              <p class="text-input__wrapper">
+              <p class="form__legend">ТЕЛ</p>
+              <p class="text-input-wrapper">
                 <input class="text-input" type="phone" id="phone" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                   required>
-                <svg class="text-input__icon" width="25" height="24">
+                <svg class="text-input-icon" width="25" height="24">
                   <use xlink:href="./img/sprite.svg#icon-phone"></use>
                 </svg>
               </p>
@@ -181,10 +182,10 @@
           <!-- Email Input -->
           <fieldset class="form__fieldset form__fieldset--email">
             <div class="form__fieldset-inputs form__fieldset-inputs--email">
-              <legend class="form__legend">E-mail</legend>
-              <p class="text-input__wrapper">
+              <p class="form__legend">E-mail</p>
+              <p class="text-input-wrapper">
                 <input class="text-input" type="email" id="email" name="user-email" placeholder="Ваш Email*" required>
-                <svg class="text-input__icon" width="32" height="21">
+                <svg class="text-input-icon" width="32" height="21">
                   <use xlink:href="./img/sprite.svg#icon-email"></use>
                 </svg>
               </p>
@@ -195,7 +196,7 @@
           <!-- Wishes Input -->
           <fieldset class="form__fieldset form__fieldset--wishes">
             <div class="form__fieldset-inputs form__fieldset-inputs--wishes">
-              <legend class="form__legend form__legend--wishes">Доп</legend>
+              <p class="form__legend form__legend--wishes">Доп</p>
               <label class="textarea-label visually-hidden" for="wishes">Пожелания к заказу</label>
               <textarea class="textarea-input" id="wishes" name="user-wishes"
                 placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -211,44 +212,46 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer container">
-    <a class="footer__logo logo" href="#">
-      <svg width="102" height="34">
-        <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
-      </svg>
-    </a>
-    <ul class="footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="27" height="17">
-            <use xlink:href="./img/sprite.svg#icon-vk"></use>
-          </svg>
-          <span class="visually-hidden">Мы вКонтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="24" height="19">
-            <use xlink:href="./img/sprite.svg#icon-youtube"></use>
-          </svg>
-          <span class="visually-hidden">Наш Ютуб</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="19" height="17">
-            <use xlink:href="./img/sprite.svg#icon-tg"></use>
-          </svg>
-          <span class="visually-hidden">Наш Телеграм</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__copyright copyright" href="#">
-      Разработано
-      <svg class="copyright__image" width="27" height="34">
-        <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
-      </svg>
-    </a>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <a class="footer__logo logo" href="#">
+        <svg width="102" height="34">
+          <use xlink:href="./img/sprite.svg#icon-logo-footer"></use>
+        </svg>
+      </a>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="27" height="17">
+              <use xlink:href="./img/sprite.svg#icon-vk"></use>
+            </svg>
+            <span class="visually-hidden">Мы вКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="24" height="19">
+              <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+            </svg>
+            <span class="visually-hidden">Наш Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__image" width="19" height="17">
+              <use xlink:href="./img/sprite.svg#icon-tg"></use>
+            </svg>
+            <span class="visually-hidden">Наш Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright copyright" href="#">
+        Разработано
+        <svg class="copyright__image" width="27" height="34">
+          <use xlink:href="./img/sprite.svg#icon-htmlacademy-logo"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
   <script src="./js/script.js"></script>
 </body>

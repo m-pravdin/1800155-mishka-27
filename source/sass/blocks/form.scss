@@ -18,16 +18,26 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 116%;
+    padding-top: 40px;
+    padding-bottom: 62px;
   }
 }
 
 .form-wrapper {
   padding: 18px 30px 55px 30px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 54px;
+    padding-top: 60px;
     padding-bottom: 50px;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
   }
 }
 
@@ -168,6 +178,8 @@
   text-transform: uppercase;
   color: $accent-color;
   min-width: 65px;
+  margin: 0;
+  padding: 0;
 
   &--type {
     margin-bottom: 30px;
@@ -237,7 +249,7 @@
   }
 }
 
-.text-input__wrapper {
+.text-input-wrapper {
   display: flex;
   align-items: center;
   position: relative;
@@ -296,15 +308,15 @@
   }
 }
 
-.text-input:hover + .text-input__icon {
+.text-input:hover + .text-input-icon {
   fill: $accent-color;
 }
 
-.text-input:focus + .text-input__icon {
+.text-input:focus + .text-input-icon {
   fill: $accent-color;
 }
 
-.text-input__icon {
+.text-input-icon {
   position: absolute;
   right: 7px;
 
@@ -312,7 +324,7 @@
     right: 22px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     right: 7px;
   }
 }
